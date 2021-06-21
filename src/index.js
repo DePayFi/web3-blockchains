@@ -9,7 +9,11 @@ let Blockchain = {
   all: all,
 
   findById: function(id){
-    return all.find((blockchain)=>{ return blockchain.id == id })
+    let fixedId = id;
+    if(fixedId.match('0x0')) { // remove leading 0
+      fixedId = fixedId.replace(/0x0+/, '0x')
+    }
+    return all.find((blockchain)=>{ return blockchain.id == fixedId })
   },
 
   findByName: function(name){
