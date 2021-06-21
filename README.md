@@ -29,7 +29,7 @@ Blockchain.findByName('ethereum')
 
 ## Support
 
-This libraries supports the following blockchains:
+This library supports the following blockchains:
 
 - [Ethereum](https://ethereum.org)
 - [Binance Smart Chain](https://www.binance.org/en/smartChain)
