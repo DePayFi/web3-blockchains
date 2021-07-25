@@ -5,7 +5,7 @@ import polygon from './blockchains/polygon'
 let all = [ethereum, bsc, polygon]
 
 let Blockchain = {
-  all: all,
+  all,
 
   findById: function (id) {
     let fixedId = id

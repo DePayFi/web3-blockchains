@@ -1,6 +1,6 @@
 {
   "name": "depay-web3-blockchains",
-  "moduleName": "Blockchain",
+  "moduleName": "Web3Blockchains",
   "version": "2.0.0",
   "description": "JavaScript library containing aggregated information and abstractions for web3 blockchains.",
   "main": "dist/cjs/index.js",
@@ -10,12 +10,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
+    "build": "rm -rf dist && rollup -c rollup.module.config.js",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "format": "prettier src --write",
     "prepublishOnly": "yarn build",
-    "start": "rollup -c rollup.demo.config.js -w",
+    "dev": "rollup -c rollup.dev.config.js -w",
     "test:units": "yarn build && npx jest --no-cache",
     "test": "yarn test:units"
   },
