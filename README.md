@@ -1,17 +1,17 @@
 ## Quickstart
 
 ```
-yarn add depay-blockchains
+yarn add depay-web3-blockchains
 ```
 
 or 
 
 ```
-npm install --save depay-blockchains
+npm install --save depay-web3-blockchains
 ```
 
 ```javascript
-import { Blockchain } from 'depay-blockchains'
+import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.all
 // [
@@ -32,7 +32,7 @@ Blockchain.findByName('ethereum')
 This library supports the following blockchains:
 
 - [Ethereum](https://ethereum.org)
-- [Binance Smart Chain](https://www.binance.org/en/smartChain)
+- [Binance Smart Chain](https://www.binance.org/smartChain)
 - [Polygon](https://polygon.technology)
 
 ## Data Structure
@@ -53,7 +53,7 @@ Blockchain data is provided in the following structure:
 ### all: Retreive all information for all blockchains
 
 ```javascript
-import { Blockchain } from 'depay-blockchains'
+import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.all
 // [
@@ -67,7 +67,7 @@ Blockchain.all
 ### findById: Get blockchain by blockchain id
 
 ```javascript
-import { Blockchain } from 'depay-blockchains'
+import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.findById('0x01')
 // { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }
@@ -79,7 +79,7 @@ Blockchain.findById('0x38')
 ### findByName: Get blockchain by blockchain name
 
 ```javascript
-import { Blockchain } from 'depay-blockchains'
+import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.findByName('ethereum')
 // { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }

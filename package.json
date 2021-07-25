@@ -1,8 +1,8 @@
 {
-  "name": "depay-blockchains",
+  "name": "depay-web3-blockchains",
   "moduleName": "Blockchain",
-  "version": "1.0.1",
-  "description": "",
+  "version": "2.0.0",
+  "description": "JavaScript library containing aggregated information and abstractions for web3 blockchains.",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "source": "src/index.js",
@@ -19,17 +19,17 @@
     "test:units": "yarn build && npx jest --no-cache",
     "test": "yarn test:units"
   },
-  "repository": "git@github.com:DePayFi/depay-blockchains.git",
+  "repository": "git@github.com:DePayFi/depay-web3-blockchains.git",
   "keywords": [
-    "react",
-    "dialog"
+    "web3",
+    "blockchains"
   ],
   "author": "depay.fi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DePayFi/depay-blockchains/issues"
+    "url": "https://github.com/DePayFi/depay-web3-blockchains/issues"
   },
-  "homepage": "https://github.com/DePayFi/depay-blockchains#readme",
+  "homepage": "https://github.com/DePayFi/depay-web3-blockchains#readme",
   "private": false,
   "dependencies": {},
   "peerDependencies": {},
