@@ -15,16 +15,16 @@ import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.all
 // [
-//   { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' },
+//   { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' },
 //   { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' },
 //   ...
 // ]
 
-Blockchain.findById('0x01')
-// { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }
+Blockchain.findById('0x1')
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 
 Blockchain.findByName('ethereum')
-// { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 ```
 
 ## Support
@@ -43,6 +43,7 @@ Blockchain data is provided in the following structure:
 {
   name: String,
   id: String,
+  networkId: String,
   label: String,
   logo: String (base64 encoded PNG)
 }
@@ -57,8 +58,8 @@ import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.all
 // [
-//   { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' },
-//   { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' },
+//   { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' },
+//   { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' },
 //   ...
 // ]
 
@@ -69,11 +70,11 @@ Blockchain.all
 ```javascript
 import { Blockchain } from 'depay-web3-blockchains'
 
-Blockchain.findById('0x01')
-// { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }
+Blockchain.findById('0x1')
+// { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
 Blockchain.findById('0x38')
-// { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' }
+// { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 
 ### findByName: Get blockchain by blockchain name
@@ -82,10 +83,10 @@ Blockchain.findById('0x38')
 import { Blockchain } from 'depay-web3-blockchains'
 
 Blockchain.findByName('ethereum')
-// { name: 'ethereum', id: '0x01', label: 'Ethereum', logo: '...' }
+// { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
 Blockchain.findByName('bsc')
-// { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' }
+// { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 
 ## Development
