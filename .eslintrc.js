@@ -17,5 +17,11 @@ module.exports = {
     node: true
   },
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      }
+    ],
   },
 }
