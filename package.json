@@ -44,7 +44,6 @@
     "@rollup/plugin-sucrase": "^3.1.0",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
-    "depay-web3mock": "^0.10.0",
     "eslint": "^7.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-webpack-plugin": "^3.0.1",
