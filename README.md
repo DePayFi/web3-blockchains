@@ -39,20 +39,21 @@ This library supports the following blockchains:
 
 Blockchain data is provided in the following structure:
 
-```
+```javascript
 {
-  name: String,
-  id: String,
-  networkId: String,
-  label: String,
+  name: String, // e.g. ethereum, bsc ...
+  id: String, // e.g. 0x1, 0x38, ...
+  networkId: String, // 1, 56, ...
+  label: String, // Ethereum, Binance Smart Chain ...
+  fullName: String, // Ethereum Mainnet, Binance Smart Chain Mainnet ...
   logo: String (base64 encoded PNG),
   currency: { Object
-    name: String,
-    symbol: String,
-    decimals: String,
+    name: String, // Ether, Binance Coin, ...
+    symbol: String, // ETH, BNB, ...
+    decimals: String, // 18
   },
-  explorer: String (URL),
-  rpc: String (URL)
+  explorer: String (URL), // https://etherscan.io, https://bncscan.com, ...
+  rpc: String (URL) // ...
 }
 ```
 
