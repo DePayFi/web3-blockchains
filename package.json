@@ -1,7 +1,7 @@
 {
   "name": "depay-web3-blockchains",
   "moduleName": "Web3Blockchains",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "JavaScript library containing aggregated information and abstractions for web3 blockchains.",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",

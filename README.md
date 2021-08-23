@@ -45,7 +45,14 @@ Blockchain data is provided in the following structure:
   id: String,
   networkId: String,
   label: String,
-  logo: String (base64 encoded PNG)
+  logo: String (base64 encoded PNG),
+  currency: { Object
+    name: String,
+    symbol: String,
+    decimals: String,
+  },
+  explorer: String (URL),
+  rpc: String (URL)
 }
 ```
 
