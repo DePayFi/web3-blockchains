@@ -84,6 +84,14 @@
       return found
     },
 
+    findByNetworkId: function (networkId) {
+      networkId = networkId.toString();
+      let found = all.find((blockchain) => {
+        return blockchain.networkId == networkId
+      });
+      return found
+    },
+
     findByName: function (name) {
       return all.find((blockchain) => {
         return blockchain.name == name

@@ -25,6 +25,9 @@ Blockchain.findById('0x1')
 
 Blockchain.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
+
+Blockchain.findByNetworkId(1)
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 ```
 
 ## Support
@@ -94,6 +97,18 @@ Blockchain.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
 Blockchain.findByName('bsc')
+// { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
+```
+
+### findByNetworkId: Get blockchain by network id
+
+```javascript
+import { Blockchain } from 'depay-web3-blockchains'
+
+Blockchain.findByNetworkId(1)
+// { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
+
+Blockchain.findByNetworkId('56')
 // { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 
