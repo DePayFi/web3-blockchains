@@ -15,5 +15,8 @@ describe('polygon', () => {
     expect(blockchain.currency.decimals).toEqual(18);
     expect(blockchain.explorer).toEqual('https://polygonscan.com');
     expect(blockchain.rpc).toEqual('https://rpc-mainnet.matic.network');
+    expect(blockchain.explorerUrlFor({
+      transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
+    })).toEqual('https://polygonscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
   });
 });

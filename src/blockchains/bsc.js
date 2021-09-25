@@ -12,5 +12,8 @@ export default {
     decimals: 18
   },
   explorer: 'https://bscscan.com',
+  explorerUrlFor: ({ transaction })=>{
+    if(transaction) { return `https://bscscan.com/tx/${transaction.id}` }
+  },
   rpc: 'https://bsc-dataseed1.binance.org'
 }

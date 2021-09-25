@@ -18,6 +18,9 @@
       decimals: 18
     },
     explorer: 'https://etherscan.io',
+    explorerUrlFor: ({ transaction })=>{
+      if(transaction) { return `https://etherscan.io/tx/${transaction.id}` }
+    },
     rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join('')
   };
 
@@ -35,6 +38,9 @@
       decimals: 18
     },
     explorer: 'https://bscscan.com',
+    explorerUrlFor: ({ transaction })=>{
+      if(transaction) { return `https://bscscan.com/tx/${transaction.id}` }
+    },
     rpc: 'https://bsc-dataseed1.binance.org'
   };
 
@@ -52,6 +58,9 @@
       decimals: 18
     },
     explorer: 'https://polygonscan.com',
+    explorerUrlFor: ({ transaction })=>{
+      if(transaction) { return `https://polygonscan.com/tx/${transaction.id}` }
+    },
     rpc: 'https://rpc-mainnet.matic.network'
   };
 

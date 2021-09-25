@@ -15,5 +15,8 @@ describe('ethereum', () => {
     expect(blockchain.currency.decimals).toEqual(18);
     expect(blockchain.explorer).toEqual('https://etherscan.io');
     expect(blockchain.rpc).toEqual(['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''));
+    expect(blockchain.explorerUrlFor({
+      transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
+    })).toEqual('https://etherscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
   });
 });
