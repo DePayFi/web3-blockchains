@@ -1,17 +1,17 @@
 ## Quickstart
 
 ```
-yarn add depay-web3-blockchains
+yarn add @depay/web3-blockchains
 ```
 
 or 
 
 ```
-npm install --save depay-web3-blockchains
+npm install --save @depay/web3-blockchains
 ```
 
 ```javascript
-import { Blockchain } from 'depay-web3-blockchains'
+import { Blockchain } from '@depay/web3-blockchains'
 
 Blockchain.all
 // [
@@ -66,7 +66,7 @@ Blockchain data is provided in the following structure:
 ### all: Retreive all information for all blockchains
 
 ```javascript
-import { Blockchain } from 'depay-web3-blockchains'
+import { Blockchain } from '@depay/web3-blockchains'
 
 Blockchain.all
 // [
@@ -80,7 +80,7 @@ Blockchain.all
 ### findById: Get blockchain by blockchain id
 
 ```javascript
-import { Blockchain } from 'depay-web3-blockchains'
+import { Blockchain } from '@depay/web3-blockchains'
 
 Blockchain.findById('0x1')
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
@@ -92,7 +92,7 @@ Blockchain.findById('0x38')
 ### findByName: Get blockchain by blockchain name
 
 ```javascript
-import { Blockchain } from 'depay-web3-blockchains'
+import { Blockchain } from '@depay/web3-blockchains'
 
 Blockchain.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
@@ -104,7 +104,7 @@ Blockchain.findByName('bsc')
 ### findByNetworkId: Get blockchain by network id
 
 ```javascript
-import { Blockchain } from 'depay-web3-blockchains'
+import { Blockchain } from '@depay/web3-blockchains'
 
 Blockchain.findByNetworkId(1)
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
