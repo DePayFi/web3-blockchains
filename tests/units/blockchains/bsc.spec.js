@@ -1,4 +1,4 @@
-import { Blockchain } from 'dist/cjs/index.js';
+import { Blockchain } from 'src';
 
 describe('bsc', () => {
   

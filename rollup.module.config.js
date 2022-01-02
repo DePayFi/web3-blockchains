@@ -9,20 +9,12 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      format: 'cjs',
-      globals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
-      },
-      file: 'dist/cjs/index.js'
-    },
-    {
       format: 'es',
       globals: {
         'react': 'React',
         'react-dom': 'ReactDOM'
       },
-      file: 'dist/es/index.js'
+      file: 'dist/esm/index.js'
     },
     {
       format: 'umd',
