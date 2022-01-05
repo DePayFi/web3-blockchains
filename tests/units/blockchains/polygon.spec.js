@@ -18,5 +18,8 @@ describe('polygon', () => {
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://polygonscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
+    expect(blockchain.explorerUrlFor({
+      token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb'
+    })).toEqual('https://polygonscan.com/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb')
   });
 });

@@ -56,9 +56,25 @@ Blockchain data is provided in the following structure:
     decimals: String, // 18
   },
   explorer: String (URL), // https://etherscan.io, https://bncscan.com, ...
-  explorerUrlFor: Function ({ transaction (with id) }) returns String, // https://etherscan.io/tx/..., https://etherscan.io/tx/...
+  explorerUrlFor: Function ({ transaction || token }) returns String, // https://etherscan.io/tx/..., https://etherscan.io/token/...
   rpc: String (URL) // ...
 }
+```
+
+### explorerUrlFor
+
+#### Transaction
+
+```javascript
+blockchain.explorerUrlFor({ transaction: { id: '0x51ae8875028b7ed004253f679076851abbd3a49e26faf8d7dac6bb283ca10536' } })
+// https://etherscan.io/tx/0x51ae8875028b7ed004253f679076851abbd3a49e26faf8d7dac6bb283ca10536
+```
+
+#### Token
+
+```javascript
+blockchain.explorerUrlFor({ token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb' })
+// https://etherscan.io/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb
 ```
 
 ## Functionalities

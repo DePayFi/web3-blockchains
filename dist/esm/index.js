@@ -12,8 +12,9 @@ var ethereum = {
     decimals: 18
   },
   explorer: 'https://etherscan.io',
-  explorerUrlFor: ({ transaction })=>{
+  explorerUrlFor: ({ transaction, token })=>{
     if(transaction) { return `https://etherscan.io/tx/${transaction.id}` }
+    if(token) { return `https://etherscan.io/token/${token}` }
   },
   rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''),
   tokens: [ // only major tokens
@@ -44,8 +45,9 @@ var bsc = {
     decimals: 18
   },
   explorer: 'https://bscscan.com',
-  explorerUrlFor: ({ transaction })=>{
+  explorerUrlFor: ({ transaction, token })=>{
     if(transaction) { return `https://bscscan.com/tx/${transaction.id}` }
+    if(token) { return `https://bscscan.com/token/${token}` }
   },
   rpc: 'https://bsc-dataseed1.binance.org',
   tokens: [ // only major tokens
@@ -73,8 +75,9 @@ var polygon = {
     decimals: 18
   },
   explorer: 'https://polygonscan.com',
-  explorerUrlFor: ({ transaction })=>{
+  explorerUrlFor: ({ transaction, token })=>{
     if(transaction) { return `https://polygonscan.com/tx/${transaction.id}` }
+    if(token) { return `https://polygonscan.com/token/${token}` }
   },
   rpc: 'https://rpc-mainnet.matic.network'
 };
