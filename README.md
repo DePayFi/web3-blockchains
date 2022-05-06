@@ -35,7 +35,7 @@ Blockchain.findByNetworkId(1)
 This library supports the following blockchains:
 
 - [Ethereum](https://ethereum.org)
-- [Binance Smart Chain](https://www.binance.org/smartChain)
+- [BNB Smart Chain](https://www.binance.org/smartChain)
 - [Polygon](https://polygon.technology)
 
 ## Data Structure
