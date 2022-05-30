@@ -1,4 +1,5 @@
 export default {
+  id: 'unknown',
   name: 'unknown',
   label: 'Unknown',
   logo:
