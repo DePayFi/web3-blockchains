@@ -20,10 +20,10 @@ Blockchain.all
 //   ...
 // ]
 
-Blockchain.findById('0x1')
+Blockchain.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findByName('ethereum')
+Blockchain.findById('0x1')
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 
 Blockchain.findByNetworkId(1)
@@ -37,6 +37,7 @@ This library supports the following blockchains:
 - [Ethereum](https://ethereum.org)
 - [BNB Smart Chain](https://www.binance.org/smartChain)
 - [Polygon](https://polygon.technology)
+- [Solana](https://solana.com)
 
 ## Data Structure
 
