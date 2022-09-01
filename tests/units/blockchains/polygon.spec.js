@@ -21,5 +21,8 @@ describe('polygon', () => {
     expect(blockchain.explorerUrlFor({
       token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb'
     })).toEqual('https://polygonscan.com/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb')
+    expect(blockchain.explorerUrlFor({
+      address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
+    })).toEqual('https://polygonscan.com/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
   });
 });

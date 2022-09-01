@@ -19,7 +19,13 @@ describe('ethereum', () => {
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://etherscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
     expect(blockchain.explorerUrlFor({
+      transaction: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f'
+    })).toEqual('https://etherscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
+    expect(blockchain.explorerUrlFor({
       token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb'
     })).toEqual('https://etherscan.io/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb')
+    expect(blockchain.explorerUrlFor({
+      address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
+    })).toEqual('https://etherscan.io/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
   });
 });

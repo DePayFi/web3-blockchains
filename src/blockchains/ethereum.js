@@ -13,9 +13,10 @@ export default {
     decimals: 18
   },
   explorer: 'https://etherscan.io',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://etherscan.io/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://etherscan.io/tx/${transaction.id || transaction}` }
     if(token) { return `https://etherscan.io/token/${token}` }
+    if(address) { return `https://etherscan.io/address/${address}` }
   },
   rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''),
   tokens: [ // only major tokens

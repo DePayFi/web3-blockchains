@@ -13,9 +13,10 @@ var ethereum = {
     decimals: 18
   },
   explorer: 'https://etherscan.io',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://etherscan.io/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://etherscan.io/tx/${transaction.id || transaction}` }
     if(token) { return `https://etherscan.io/token/${token}` }
+    if(address) { return `https://etherscan.io/address/${address}` }
   },
   rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''),
   tokens: [ // only major tokens
@@ -46,9 +47,10 @@ var bsc = {
     decimals: 18
   },
   explorer: 'https://bscscan.com',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://bscscan.com/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://bscscan.com/tx/${transaction.id || transaction}` }
     if(token) { return `https://bscscan.com/token/${token}` }
+    if(address) { return `https://bscscan.com/address/${address}` }
   },
   rpc: 'https://bsc-dataseed1.binance.org',
   tokens: [ // only major tokens
@@ -78,9 +80,10 @@ var polygon = {
     decimals: 18
   },
   explorer: 'https://polygonscan.com',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://polygonscan.com/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://polygonscan.com/tx/${transaction.id || transaction}` }
     if(token) { return `https://polygonscan.com/token/${token}` }
+    if(address) { return `https://polygonscan.com/address/${address}` }
   },
   rpc: 'https://rpc-mainnet.matic.network',
   tokens: [ // only major tokens
@@ -109,9 +112,10 @@ var solana = {
     decimals: 9
   },
   explorer: 'https://solscan.io',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://solscan.io/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://solscan.io/tx/${transaction.id || transaction}` }
     if(token) { return `https://solscan.io/token/${token}` }
+    if(address) { return `https://solscan.io/address/${address}` }
   },
   rpc: 'https://api.mainnet-beta.solana.com',
   tokens: [ // only major tokens

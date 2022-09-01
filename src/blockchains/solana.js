@@ -12,9 +12,10 @@ export default {
     decimals: 9
   },
   explorer: 'https://solscan.io',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://solscan.io/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://solscan.io/tx/${transaction.id || transaction}` }
     if(token) { return `https://solscan.io/token/${token}` }
+    if(address) { return `https://solscan.io/address/${address}` }
   },
   rpc: 'https://api.mainnet-beta.solana.com',
   tokens: [ // only major tokens

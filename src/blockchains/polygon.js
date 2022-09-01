@@ -13,9 +13,10 @@ export default {
     decimals: 18
   },
   explorer: 'https://polygonscan.com',
-  explorerUrlFor: ({ transaction, token })=>{
-    if(transaction) { return `https://polygonscan.com/tx/${transaction.id}` }
+  explorerUrlFor: ({ transaction, token, address })=>{
+    if(transaction) { return `https://polygonscan.com/tx/${transaction.id || transaction}` }
     if(token) { return `https://polygonscan.com/token/${token}` }
+    if(address) { return `https://polygonscan.com/address/${address}` }
   },
   rpc: 'https://rpc-mainnet.matic.network',
   tokens: [ // only major tokens

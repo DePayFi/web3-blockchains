@@ -17,7 +17,13 @@ describe('solana', () => {
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
     })).toEqual('https://solscan.io/tx/3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC')
     expect(blockchain.explorerUrlFor({
+      transaction: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC'
+    })).toEqual('https://solscan.io/tx/3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC')
+    expect(blockchain.explorerUrlFor({
       token: 'So11111111111111111111111111111111111111112'
     })).toEqual('https://solscan.io/token/So11111111111111111111111111111111111111112')
+    expect(blockchain.explorerUrlFor({
+      address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
+    })).toEqual('https://solscan.io/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
   });
 });

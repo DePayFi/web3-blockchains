@@ -67,7 +67,7 @@ Blockchain data is provided in the following structure:
 #### Transaction
 
 ```javascript
-blockchain.explorerUrlFor({ transaction: { id: '0x51ae8875028b7ed004253f679076851abbd3a49e26faf8d7dac6bb283ca10536' } })
+blockchain.explorerUrlFor({ transaction: '0x51ae8875028b7ed004253f679076851abbd3a49e26faf8d7dac6bb283ca10536' })
 // https://etherscan.io/tx/0x51ae8875028b7ed004253f679076851abbd3a49e26faf8d7dac6bb283ca10536
 ```
 
@@ -76,6 +76,13 @@ blockchain.explorerUrlFor({ transaction: { id: '0x51ae8875028b7ed004253f67907685
 ```javascript
 blockchain.explorerUrlFor({ token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb' })
 // https://etherscan.io/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb
+```
+
+#### Address
+
+```javascript
+blockchain.explorerUrlFor({ address: '0x08B277154218CCF3380CAE48d630DA13462E3950' })
+// https://etherscan.io/address/0x08B277154218CCF3380CAE48d630DA13462E3950
 ```
 
 ## Functionalities
