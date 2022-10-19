@@ -146,9 +146,3 @@ Blockchain.findByNetworkId('56')
 yarn install
 yarn dev
 ```
-
-### Release
-
-```
-npm publish
-```
