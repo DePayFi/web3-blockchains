@@ -4,7 +4,7 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Web3Blockchains = {}));
 }(this, (function (exports) { 'use strict';
 
-  const logo$4 = 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHNoYXBlLXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBpbWFnZS1yZW5kZXJpbmc9Im9wdGltaXplUXVhbGl0eSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgMjgzLjUgMjgzLjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4My41IDI4My41IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGU+LnN0MXtmaWxsOiM4YzhjOGN9PC9zdHlsZT48Zz48Zz48cGF0aCBzdHlsZT0iZmlsbDojMzQzNDM0IiBkPSJtMTQxLjcgNTUtMS4xIDMuOXYxMTQuOGwxLjEgMS4xIDUzLjMtMzEuNXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJtMTQxLjcgNTUtNTMuMiA4OC4zIDUzLjIgMzEuNXYtNTUuN3oiLz48cGF0aCBzdHlsZT0iZmlsbDojM2MzYzNiIiBkPSJtMTQxLjcgMTg0LjktLjYuOHY0MC45bC42IDEuOSA1My4zLTc1LjF6Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTE0MS43IDIyOC41di00My42bC01My4yLTMxLjV6Ii8+PHBhdGggc3R5bGU9ImZpbGw6IzE0MTQxNCIgZD0ibTE0MS43IDE3NC44IDUzLjMtMzEuNS01My4zLTI0LjJ6Ii8+PHBhdGggc3R5bGU9ImZpbGw6IzM5MzkzOSIgZD0ibTg4LjUgMTQzLjMgNTMuMiAzMS41di01NS43eiIvPjwvZz48L2c+PC9zdmc+Cg==';
+  const logo$5 = 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHNoYXBlLXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBpbWFnZS1yZW5kZXJpbmc9Im9wdGltaXplUXVhbGl0eSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgMjgzLjUgMjgzLjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4My41IDI4My41IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGU+LnN0MXtmaWxsOiM4YzhjOGN9PC9zdHlsZT48Zz48Zz48cGF0aCBzdHlsZT0iZmlsbDojMzQzNDM0IiBkPSJtMTQxLjcgNTUtMS4xIDMuOXYxMTQuOGwxLjEgMS4xIDUzLjMtMzEuNXoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJtMTQxLjcgNTUtNTMuMiA4OC4zIDUzLjIgMzEuNXYtNTUuN3oiLz48cGF0aCBzdHlsZT0iZmlsbDojM2MzYzNiIiBkPSJtMTQxLjcgMTg0LjktLjYuOHY0MC45bC42IDEuOSA1My4zLTc1LjF6Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTE0MS43IDIyOC41di00My42bC01My4yLTMxLjV6Ii8+PHBhdGggc3R5bGU9ImZpbGw6IzE0MTQxNCIgZD0ibTE0MS43IDE3NC44IDUzLjMtMzEuNS01My4zLTI0LjJ6Ii8+PHBhdGggc3R5bGU9ImZpbGw6IzM5MzkzOSIgZD0ibTg4LjUgMTQzLjMgNTMuMiAzMS41di01NS43eiIvPjwvZz48L2c+PC9zdmc+Cg==';
 
   var ethereum = {
     name: 'ethereum',
@@ -12,7 +12,7 @@
     networkId: '1',
     label: 'Ethereum',
     fullName: 'Ethereum Mainnet',
-    logo: logo$4,
+    logo: logo$5,
     currency: {
       name: 'Ether',
       symbol: 'ETH',
@@ -26,7 +26,7 @@
     },
     rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''),
     tokens: [ // only major tokens
-      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": logo$4, "type": "NATIVE"},
+      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": logo$5, "type": "NATIVE"},
       {"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png", "type": "20"},
       {"address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png", "type": "20"},
       {"address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599", "symbol": "WBTC", "name": "Wrapped BTC", "decimals": 8, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png", "type": "20"},
@@ -38,7 +38,7 @@
     ]
   };
 
-  const logo$3 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTIgMTkyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNNjIuOCA1Mi42IDk2IDMzLjVsMzMuMiAxOS4xLTEyLjIgNy0yMS0xMS45LTIxIDEyLTEyLjItNy4xem02Ni40IDI0LjItMTIuMi03LTIxIDEyLTIxLTEyLjEtMTIuMiA3LjFWOTFsMjEgMTIuMXYyNC4xbDEyLjIgNy4xIDEyLjItNy4xdi0yNC4xbDIxLTEyLjFWNzYuOHptMCAzOC40VjEwMWwtMTIuMiA3djE0LjJsMTIuMi03em04LjYgNC44LTIxIDEyLjF2MTQuMmwzMy4yLTE5LjFWODguOUwxMzcuOCA5NnYyNHptLTEyLjItNTUuMyAxMi4yIDcuMVY4NmwxMi4yLTcuMVY2NC43bC0xMi4yLTcuMS0xMi4yIDcuMXptLTQxLjggNzIuNnYxNC4ybDEyLjIgNy4xIDEyLjItNy4xdi0xNC4ybC0xMi4yIDctMTIuMi03em0tMjEtMjIuMSAxMi4yIDcuMVYxMDhsLTEyLjItN3YxNC4yem0yMS01MC41TDk2IDcxLjhsMTIuMi03LjEtMTIuMi03YzAtLjEtMTIuMiA3LTEyLjIgN3ptLTI5LjYgNy4xIDEyLjItNy4xLTEyLjItNy4xTDQyIDY0Ljd2MTQuMkw1NC4yIDg2VjcxLjh6bTAgMjQuMS0xMi4yLTd2MzguM2wzMy4yIDE5LjF2LTE0LjJsLTIxLTEyLjFWOTUuOXoiIHN0eWxlPSJmaWxsOiNmMGI5MGIiLz48L3N2Zz4=';
+  const logo$4 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTIgMTkyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNNjIuOCA1Mi42IDk2IDMzLjVsMzMuMiAxOS4xLTEyLjIgNy0yMS0xMS45LTIxIDEyLTEyLjItNy4xem02Ni40IDI0LjItMTIuMi03LTIxIDEyLTIxLTEyLjEtMTIuMiA3LjFWOTFsMjEgMTIuMXYyNC4xbDEyLjIgNy4xIDEyLjItNy4xdi0yNC4xbDIxLTEyLjFWNzYuOHptMCAzOC40VjEwMWwtMTIuMiA3djE0LjJsMTIuMi03em04LjYgNC44LTIxIDEyLjF2MTQuMmwzMy4yLTE5LjFWODguOUwxMzcuOCA5NnYyNHptLTEyLjItNTUuMyAxMi4yIDcuMVY4NmwxMi4yLTcuMVY2NC43bC0xMi4yLTcuMS0xMi4yIDcuMXptLTQxLjggNzIuNnYxNC4ybDEyLjIgNy4xIDEyLjItNy4xdi0xNC4ybC0xMi4yIDctMTIuMi03em0tMjEtMjIuMSAxMi4yIDcuMVYxMDhsLTEyLjItN3YxNC4yem0yMS01MC41TDk2IDcxLjhsMTIuMi03LjEtMTIuMi03YzAtLjEtMTIuMiA3LTEyLjIgN3ptLTI5LjYgNy4xIDEyLjItNy4xLTEyLjItNy4xTDQyIDY0Ljd2MTQuMkw1NC4yIDg2VjcxLjh6bTAgMjQuMS0xMi4yLTd2MzguM2wzMy4yIDE5LjF2LTE0LjJsLTIxLTEyLjFWOTUuOXoiIHN0eWxlPSJmaWxsOiNmMGI5MGIiLz48L3N2Zz4=';
 
   var bsc = {
     name: 'bsc',
@@ -46,7 +46,7 @@
     networkId: '56',
     label: 'BNB Smart Chain',
     fullName: 'BNB Smart Chain Mainnet',
-    logo: logo$3,
+    logo: logo$4,
     currency: {
       name: 'BNB',
       symbol: 'BNB',
@@ -60,7 +60,7 @@
     },
     rpc: 'https://bsc-dataseed1.binance.org',
     tokens: [ // only major tokens
-      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": logo$3, "type": "NATIVE"},
+      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": logo$4, "type": "NATIVE"},
       {"address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "symbol": "WBNB", "name": "Wrapped BNB", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png", "type": "20"},
       {"address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56", "symbol": "BUSD", "name": "BUSD Token", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png", "type": "20"},
       {"address": "0x55d398326f99059fF775485246999027B3197955", "symbol": "USDT", "name": "Tether USD", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png", "type": "20"},
@@ -71,7 +71,7 @@
     ]
   };
 
-  const logo$2 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NS40IDQ1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1LjQgNDUuNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTMwLjIgMTcuN2MtLjYtLjMtMS4zLS4zLTEuOCAwbC00LjMgMi41LTIuOSAxLjYtNC4yIDIuNWMtLjYuMy0xLjMuMy0xLjggMGwtMy4zLTJjLS41LS4zLS45LS45LS45LTEuNnYtMy44YzAtLjcuNC0xLjMuOS0xLjZsMy4zLTEuOWMuNi0uMyAxLjItLjMgMS44IDBsMy4zIDJjLjYuMy45LjkuOSAxLjZ2Mi41bDIuOS0xLjd2LTIuNmMwLS43LS4zLTEuMy0uOS0xLjZMMTcuMSAxMGMtLjYtLjMtMS4yLS4zLTEuOCAwTDkgMTMuN2MtLjYuMy0uOS45LS45IDEuNXY3LjFjMCAuNy4zIDEuMy45IDEuNmw2LjIgMy42Yy42LjMgMS4yLjMgMS44IDBsNC4yLTIuNCAyLjktMS43IDQuMi0yLjRjLjYtLjMgMS4zLS4zIDEuOCAwbDMuMyAxLjljLjYuMy45LjkuOSAxLjZ2My44YzAgLjctLjMgMS4zLS45IDEuNmwtMy4yIDEuOWMtLjYuMy0xLjIuMy0xLjggMGwtMy4zLTEuOWMtLjYtLjMtLjktLjktLjktMS42di0yLjRsLTIuOSAxLjd2Mi41YzAgLjcuMyAxLjMuOSAxLjZsNi4xIDMuNmMuNi4zIDEuMi4zIDEuOCAwbDYuMS0zLjZjLjYtLjMuOS0uOS45LTEuNnYtNy4yYzAtLjctLjMtMS4zLS45LTEuNmwtNi0zLjZ6IiBzdHlsZT0iZmlsbDojODI0N2U1Ii8+PC9zdmc+Cg==';
+  const logo$3 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NS40IDQ1LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1LjQgNDUuNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTMwLjIgMTcuN2MtLjYtLjMtMS4zLS4zLTEuOCAwbC00LjMgMi41LTIuOSAxLjYtNC4yIDIuNWMtLjYuMy0xLjMuMy0xLjggMGwtMy4zLTJjLS41LS4zLS45LS45LS45LTEuNnYtMy44YzAtLjcuNC0xLjMuOS0xLjZsMy4zLTEuOWMuNi0uMyAxLjItLjMgMS44IDBsMy4zIDJjLjYuMy45LjkuOSAxLjZ2Mi41bDIuOS0xLjd2LTIuNmMwLS43LS4zLTEuMy0uOS0xLjZMMTcuMSAxMGMtLjYtLjMtMS4yLS4zLTEuOCAwTDkgMTMuN2MtLjYuMy0uOS45LS45IDEuNXY3LjFjMCAuNy4zIDEuMy45IDEuNmw2LjIgMy42Yy42LjMgMS4yLjMgMS44IDBsNC4yLTIuNCAyLjktMS43IDQuMi0yLjRjLjYtLjMgMS4zLS4zIDEuOCAwbDMuMyAxLjljLjYuMy45LjkuOSAxLjZ2My44YzAgLjctLjMgMS4zLS45IDEuNmwtMy4yIDEuOWMtLjYuMy0xLjIuMy0xLjggMGwtMy4zLTEuOWMtLjYtLjMtLjktLjktLjktMS42di0yLjRsLTIuOSAxLjd2Mi41YzAgLjcuMyAxLjMuOSAxLjZsNi4xIDMuNmMuNi4zIDEuMi4zIDEuOCAwbDYuMS0zLjZjLjYtLjMuOS0uOS45LTEuNnYtNy4yYzAtLjctLjMtMS4zLS45LTEuNmwtNi0zLjZ6IiBzdHlsZT0iZmlsbDojODI0N2U1Ii8+PC9zdmc+Cg==';
 
   var polygon = {
     name: 'polygon',
@@ -79,7 +79,7 @@
     networkId: '137',
     label: 'Polygon',
     fullName: 'Polygon Mainnet',
-    logo: logo$2,
+    logo: logo$3,
     currency: {
       name: 'Polygon',
       symbol: 'MATIC',
@@ -93,7 +93,7 @@
     },
     rpc: 'https://rpc-mainnet.matic.network',
     tokens: [ // only major tokens
-      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "MATIC", "name": "Polygon", "decimals": 18, "logo": logo$2, "type": "NATIVE"},
+      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "MATIC", "name": "Polygon", "decimals": 18, "logo": logo$3, "type": "NATIVE"},
       {"address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270", "symbol": "WMATIC", "name": "Wrapped Matic", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png", "type": "20"},
       {"address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png", "type": "20"},
       {"address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png", "type": "20"},
@@ -104,14 +104,14 @@
     ]
   };
 
-  const logo$1 = 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM5Ny43IDMxMS43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzOTcuNyAzMTEuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8xIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI5MS44NTQiIHkxPSIxNC4zNTkiIHgyPSIxNjUuNzY4IiB5Mj0iMjU1Ljg2NiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMwLjUzNSkiPjxzdG9wIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwZmZhMyIvPjxzdG9wIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6I2RjMWZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iTTEyMS44IDIwMi45YzEuNC0xLjQgMy4zLTIuMiA1LjMtMi4yaDE4Mi4yYzMuMyAwIDUgNCAyLjYgNi40bC0zNiAzNmMtMS40IDEuNC0zLjMgMi4yLTUuMyAyLjJIODguNGMtMy4zIDAtNS00LTIuNi02LjRsMzYtMzZ6IiBzdHlsZT0iZmlsbDp1cmwoI3dlYjNfYmxvY2tjaGFpbnNfc29sYW5hX2dyYWRpZW50XzEpIi8+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8yIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjIzNi43MjciIHkxPSItMTQuNDIyIiB4Mj0iMTEwLjY0MSIgeTI9IjIyNy4wODUiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMC41MzUpIj48c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMGZmYTMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNkYzFmZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIHN0eWxlPSJmaWxsOnVybCgjd2ViM19ibG9ja2NoYWluc19zb2xhbmFfZ3JhZGllbnRfMikiIGQ9Ik0xMjEuOCA2OC42YzEuNC0xLjQgMy4zLTIuMiA1LjMtMi4yaDE4Mi4yYzMuMyAwIDUgNCAyLjYgNi40bC0zNiAzNmMtMS40IDEuNC0zLjMgMi4yLTUuMyAyLjJIODguNGMtMy4zIDAtNS00LTIuNi02LjRsMzYtMzZ6Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8zIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI2NC4xMTQiIHkxPSItLjEyMyIgeDI9IjEzOC4wMjgiIHkyPSIyNDEuMzgzIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzAuNTM1KSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMDBmZmEzIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojZGMxZmZmIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBzdHlsZT0iZmlsbDp1cmwoI3dlYjNfYmxvY2tjaGFpbnNfc29sYW5hX2dyYWRpZW50XzMpIiBkPSJNMjc1LjkgMTM1LjNjLTEuNC0xLjQtMy4zLTIuMi01LjMtMi4ySDg4LjRjLTMuMyAwLTUgNC0yLjYgNi40bDM2IDM2YzEuNCAxLjQgMy4zIDIuMiA1LjMgMi4yaDE4Mi4yYzMuMyAwIDUtNCAyLjYtNi40bC0zNi0zNnoiLz48L3N2Zz4K';
+  const logo$2 = 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM5Ny43IDMxMS43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzOTcuNyAzMTEuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8xIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI5MS44NTQiIHkxPSIxNC4zNTkiIHgyPSIxNjUuNzY4IiB5Mj0iMjU1Ljg2NiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMwLjUzNSkiPjxzdG9wIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwZmZhMyIvPjxzdG9wIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6I2RjMWZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iTTEyMS44IDIwMi45YzEuNC0xLjQgMy4zLTIuMiA1LjMtMi4yaDE4Mi4yYzMuMyAwIDUgNCAyLjYgNi40bC0zNiAzNmMtMS40IDEuNC0zLjMgMi4yLTUuMyAyLjJIODguNGMtMy4zIDAtNS00LTIuNi02LjRsMzYtMzZ6IiBzdHlsZT0iZmlsbDp1cmwoI3dlYjNfYmxvY2tjaGFpbnNfc29sYW5hX2dyYWRpZW50XzEpIi8+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8yIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjIzNi43MjciIHkxPSItMTQuNDIyIiB4Mj0iMTEwLjY0MSIgeTI9IjIyNy4wODUiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMC41MzUpIj48c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMGZmYTMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNkYzFmZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIHN0eWxlPSJmaWxsOnVybCgjd2ViM19ibG9ja2NoYWluc19zb2xhbmFfZ3JhZGllbnRfMikiIGQ9Ik0xMjEuOCA2OC42YzEuNC0xLjQgMy4zLTIuMiA1LjMtMi4yaDE4Mi4yYzMuMyAwIDUgNCAyLjYgNi40bC0zNiAzNmMtMS40IDEuNC0zLjMgMi4yLTUuMyAyLjJIODguNGMtMy4zIDAtNS00LTIuNi02LjRsMzYtMzZ6Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJ3ZWIzX2Jsb2NrY2hhaW5zX3NvbGFuYV9ncmFkaWVudF8zIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI2NC4xMTQiIHkxPSItLjEyMyIgeDI9IjEzOC4wMjgiIHkyPSIyNDEuMzgzIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzAuNTM1KSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMDBmZmEzIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojZGMxZmZmIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBzdHlsZT0iZmlsbDp1cmwoI3dlYjNfYmxvY2tjaGFpbnNfc29sYW5hX2dyYWRpZW50XzMpIiBkPSJNMjc1LjkgMTM1LjNjLTEuNC0xLjQtMy4zLTIuMi01LjMtMi4ySDg4LjRjLTMuMyAwLTUgNC0yLjYgNi40bDM2IDM2YzEuNCAxLjQgMy4zIDIuMiA1LjMgMi4yaDE4Mi4yYzMuMyAwIDUtNCAyLjYtNi40bC0zNi0zNnoiLz48L3N2Zz4K';
 
   var solana = {
     name: 'solana',
     networkId: 'mainnet-beta',
     label: 'Solana',
     fullName: 'Solana',
-    logo: logo$1,
+    logo: logo$2,
     currency: {
       name: 'Solana',
       symbol: 'SOL',
@@ -125,10 +125,41 @@
     },
     rpc: 'https://api.mainnet-beta.solana.com',
     tokens: [ // only major tokens
-      {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": logo$1, "type": "NATIVE"},
+      {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": logo$2, "type": "NATIVE"},
       {"address": "So11111111111111111111111111111111111111112", "symbol": "WSOL", "name": "Wrapped SOL", "decimals": 9, "logo": "https://img.raydium.io/icon/So11111111111111111111111111111111111111112.png", "type": "SPL"},
       {"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://img.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png", "type": "SPL"},
       {"address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB", "symbol": "USDT", "name": "USDT", "decimals": 6, "logo": "https://img.raydium.io/icon/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png", "type": "SPL"}
+    ]
+  };
+
+  const logo$1 = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIKCSBpZD0iTGF5ZXJfMSIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgaW1hZ2UtcmVuZGVyaW5nPSJvcHRpbWl6ZVF1YWxpdHkiIHNoYXBlLXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIgoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjgzLjUgMjgzLjUiCgkgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjgzLjUgMjgzLjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDAzN0MxO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTE3NC41LDEyNS43bC0zMi43LDU3LjJMMTA5LDEyNS4zaDY1LjVWMTI1Ljd6IE0yMDcuMiwxMDYuMmgtMTMxbDY1LjUsMTE1LjJMMjA3LjIsMTA2LjJ6IE01NC43LDY4LjEKCWwxMC44LDE5LjFoMTUyLjFsMTEuMi0xOS4xSDU0Ljd6Ii8+Cjwvc3ZnPgo=';
+
+  var velas = {
+    name: 'velas',
+    id: '0x6A',
+    networkId: '106',
+    label: 'VELAS',
+    fullName: 'Velas EVM Mainnet',
+    logo: logo$1,
+    currency: {
+      name: 'Velas',
+      symbol: 'VLX',
+      decimals: 18
+    },
+    explorer: 'https://evmexplorer.velas.com',
+    explorerUrlFor: ({ transaction, token, address })=>{
+      if(transaction) { return `https://evmexplorer.velas.com/tx/${transaction.id || transaction}` }
+      if(token) { return `https://evmexplorer.velas.com/token/${token}` }
+      if(address) { return `https://evmexplorer.velas.com/address/${address}` }
+    },
+    rpc: 'https://evmexplorer.velas.com/rpc',
+    tokens: [ // only major tokens
+      {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "VLX", "name": "Velas", "decimals": 18, "logo": logo$1, "type": "NATIVE"},
+      {"address": "0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126", "symbol": "WVLX", "name": "Wrapped Velas", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xc579d1f3cf86749e05cd06f7ade17856c2ce3126/logo.png?raw=true", "type": "20"},
+      {"address": "0xc111c29A988AE0C0087D97b33C6E6766808A3BD3", "symbol": "BUSD", "name": "Multichain BUSD", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xc111c29a988ae0c0087d97b33c6e6766808a3bd3/logo.png?raw=true", "type": "20"},
+      {"address": "0x01445C31581c354b7338AC35693AB2001B50b9aE", "symbol": "USDT", "name": "Multichain USDT", "decimals": 6, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x01445c31581c354b7338ac35693ab2001b50b9ae/logo.png?raw=true", "type": "20"},
+      {"address": "0x85219708c49aa701871Ad330A94EA0f41dFf24Ca", "symbol": "ETH", "name": "ETH", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x85219708c49aa701871ad330a94ea0f41dff24ca/logo.png?raw=true", "type": "20"},
+      {"address": "0xaBf26902Fd7B624e0db40D31171eA9ddDf078351", "symbol": "WAG", "name": "WagyuSwap", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true", "type": "20"},
     ]
   };
 
@@ -146,6 +177,7 @@
     bsc,
     polygon,
     solana,
+    velas,
     unknown
   ];
 

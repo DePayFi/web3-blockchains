@@ -2,6 +2,7 @@ import ethereum from './blockchains/ethereum'
 import bsc from './blockchains/bsc'
 import polygon from './blockchains/polygon'
 import solana from './blockchains/solana'
+import velas from './blockchains/velas'
 import unknown from './blockchains/unknown'
 
 let all = [
@@ -9,6 +10,7 @@ let all = [
   bsc,
   polygon,
   solana,
+  velas,
   unknown
 ]
 
