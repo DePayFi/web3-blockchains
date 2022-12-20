@@ -132,7 +132,7 @@ const logo$1 = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz
 
 var velas = {
   name: 'velas',
-  id: '0x6A',
+  id: '0x6a',
   networkId: '106',
   label: 'VELAS',
   fullName: 'Velas EVM Mainnet',
@@ -187,7 +187,7 @@ let Blockchain = {
       fixedId = fixedId.replace(/0x0+/, '0x');
     }
     let found = all.find((blockchain) => {
-      return blockchain.id == fixedId
+      return blockchain.id && blockchain.id.toLowerCase() == fixedId.toLowerCase()
     });
     if(found == undefined) {
       found = all.find((blockchain) => {

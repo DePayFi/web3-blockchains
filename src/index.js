@@ -24,7 +24,7 @@ let Blockchain = {
       fixedId = fixedId.replace(/0x0+/, '0x')
     }
     let found = all.find((blockchain) => {
-      return blockchain.id == fixedId
+      return blockchain.id && blockchain.id.toLowerCase() == fixedId.toLowerCase()
     })
     if(found == undefined) {
       found = all.find((blockchain) => {

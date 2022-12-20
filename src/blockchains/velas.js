@@ -2,7 +2,7 @@ const logo = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
 
 export default {
   name: 'velas',
-  id: '0x6A',
+  id: '0x6a',
   networkId: '106',
   label: 'VELAS',
   fullName: 'Velas EVM Mainnet',
