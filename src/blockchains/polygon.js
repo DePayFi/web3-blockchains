@@ -4,6 +4,7 @@ export default {
   name: 'polygon',
   id: '0x89',
   networkId: '137',
+  namespace: 'eip155',
   label: 'Polygon',
   fullName: 'Polygon Mainnet',
   logo,

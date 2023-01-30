@@ -4,6 +4,7 @@ export default {
   name: 'bsc',
   id: '0x38',
   networkId: '56',
+  namespace: 'eip155',
   label: 'BNB Smart Chain',
   fullName: 'BNB Smart Chain Mainnet',
   logo,

@@ -4,6 +4,7 @@ export default {
   name: 'velas',
   id: '0x6a',
   networkId: '106',
+  namespace: 'eip155',
   label: 'VELAS',
   fullName: 'Velas EVM Mainnet',
   logo,

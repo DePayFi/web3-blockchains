@@ -4,6 +4,7 @@ export default {
   name: 'ethereum',
   id: '0x1',
   networkId: '1',
+  namespace: 'eip155',
   label: 'Ethereum',
   fullName: 'Ethereum Mainnet',
   logo,

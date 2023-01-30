@@ -2,7 +2,8 @@ const logo = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
 
 export default {
   name: 'solana',
-  networkId: 'mainnet-beta',
+  networkId: 'mainnetBeta',
+  namespace: 'solana',
   label: 'Solana',
   fullName: 'Solana',
   logo,
