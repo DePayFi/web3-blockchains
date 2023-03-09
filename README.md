@@ -38,6 +38,7 @@ This library supports the following blockchains:
 - [BNB Smart Chain](https://www.binance.org/smartChain)
 - [Polygon](https://polygon.technology)
 - [Solana](https://solana.com)
+- [Fantom](https://fantom.foundation)
 - [Velas](https://velas.com)
 
 ## Data Structure
