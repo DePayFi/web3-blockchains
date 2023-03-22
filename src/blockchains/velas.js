@@ -11,7 +11,14 @@ export default {
   currency: {
     name: 'Velas',
     symbol: 'VLX',
-    decimals: 18
+    decimals: 18,
+    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
+  },
+  wrapped: {
+    address: '0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126'
+  },
+  stables: { // max. 3 per fiat currency
+    usd: ['0xc111c29A988AE0C0087D97b33C6E6766808A3BD3', '0x01445C31581c354b7338AC35693AB2001B50b9aE']
   },
   explorer: 'https://evmexplorer.velas.com',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -27,5 +34,7 @@ export default {
     {"address": "0x01445C31581c354b7338AC35693AB2001B50b9aE", "symbol": "USDT", "name": "Multichain USDT", "decimals": 6, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x01445c31581c354b7338ac35693ab2001b50b9ae/logo.png?raw=true", "type": "20"},
     {"address": "0x85219708c49aa701871Ad330A94EA0f41dFf24Ca", "symbol": "ETH", "name": "ETH", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x85219708c49aa701871ad330a94ea0f41dff24ca/logo.png?raw=true", "type": "20"},
     {"address": "0xaBf26902Fd7B624e0db40D31171eA9ddDf078351", "symbol": "WAG", "name": "WagyuSwap", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xabf26902fd7b624e0db40d31171ea9dddf078351/logo.png?raw=true", "type": "20"},
-  ]
+  ],
+  zero: '0x0000000000000000000000000000000000000000',
+  maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
 }

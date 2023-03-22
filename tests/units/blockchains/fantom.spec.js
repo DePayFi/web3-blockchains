@@ -1,9 +1,9 @@
-import { Blockchain } from 'src';
+import Blockchains from 'src';
 
 describe('fantom', () => {
   
   it('provides basic structured data', () => {
-    let blockchain = Blockchain.findByName('fantom');
+    let blockchain = Blockchains.findByName('fantom');
     expect(blockchain.name).toEqual('fantom');
     expect(blockchain.id).toEqual('0xFA');
     expect(blockchain.networkId).toEqual('250');
@@ -14,6 +14,9 @@ describe('fantom', () => {
     expect(blockchain.currency.name).toEqual('Fantom');
     expect(blockchain.currency.symbol).toEqual('FTM');
     expect(blockchain.currency.decimals).toEqual(18);
+    expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
+    expect(blockchain.wrapped.address).toEqual('0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83');
+    expect(blockchain.stables.usd).toEqual(['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', '0x049d68029688eAbF473097a2fC38ef61633A3C7A', '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E']);
     expect(blockchain.explorer).toEqual('https://ftmscan.com');
     expect(blockchain.rpc).toEqual('https://endpoints.omniatech.io/v1/fantom/mainnet/public');
     expect(blockchain.explorerUrlFor({
@@ -28,5 +31,7 @@ describe('fantom', () => {
     expect(blockchain.explorerUrlFor({
       address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
     })).toEqual('https://ftmscan.com/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
+    expect(blockchain.zero).toEqual('0x0000000000000000000000000000000000000000');
+    expect(blockchain.maxInt).toEqual('115792089237316195423570985008687907853269984665640564039457584007913129639935');
   });
 });

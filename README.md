@@ -11,22 +11,44 @@ npm install --save @depay/web3-blockchains
 ```
 
 ```javascript
-import { Blockchain } from '@depay/web3-blockchains'
+import Blockchains from '@depay/web3-blockchains'
 
-Blockchain.all
+Blockchains.all
 // [
 //   { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' },
 //   { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' },
 //   ...
 // ]
 
-Blockchain.findByName('ethereum')
+Blockchains.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findById('0x1')
+Blockchains.findById('0x1')
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findByNetworkId(1)
+Blockchains.findByNetworkId(1)
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
+```
+
+or 
+
+```javascript
+import { all, findByName, findById, findByNetworkId } from '@depay/web3-blockchains'
+
+all
+// [
+//   { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' },
+//   { name: 'bsc', id: '0x38', label: 'Binance Smart Chain', logo: '...' },
+//   ...
+// ]
+
+findByName('ethereum')
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
+
+findById('0x1')
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
+
+findByNetworkId(1)
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 ```
 
@@ -58,10 +80,31 @@ Blockchain data is provided in the following structure:
     name: String, // Ether, Binance Coin, ...
     symbol: String, // ETH, BNB, ...
     decimals: String, // 18
+    address: String, // address or placeholder address
+  },
+  wrapped: { Object
+    address: String // address of the wrapped native scurrency
+  },
+  stables: { Object
+    usd: [ Array
+      String // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+    ]
   },
   explorer: String (URL), // https://etherscan.io, https://bncscan.com, ...
   explorerUrlFor: Function ({ transaction || token }) returns String, // https://etherscan.io/tx/..., https://etherscan.io/token/...
-  rpc: String (URL) // ...
+  rpc: String (URL), // ...
+  tokens: [ Array
+    { Object
+      address: String, // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+      symbol: String, // USDC
+      name: String, // USD Coin
+      decimals: Integer, // 6
+      logo: String(URL|Data URL), // https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo.png 
+      type: String, // 20
+    }, 
+  ],
+  zero: String, // 0x0000000000000000000000000000000000000000
+  maxInt: String, // 115792089237316195423570985008687907853269984665640564039457584007913129639935
 }
 ```
 
@@ -93,9 +136,9 @@ blockchain.explorerUrlFor({ address: '0x08B277154218CCF3380CAE48d630DA13462E3950
 ### all: Retreive all information for all blockchains
 
 ```javascript
-import { Blockchain } from '@depay/web3-blockchains'
+import Blockchains from '@depay/web3-blockchains'
 
-Blockchain.all
+Blockchains.all
 // [
 //   { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' },
 //   { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' },
@@ -107,36 +150,36 @@ Blockchain.all
 ### findById: Get blockchain by blockchain id
 
 ```javascript
-import { Blockchain } from '@depay/web3-blockchains'
+import Blockchains from '@depay/web3-blockchains'
 
-Blockchain.findById('0x1')
+Blockchains.findById('0x1')
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findById('0x38')
+Blockchains.findById('0x38')
 // { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 
 ### findByName: Get blockchain by blockchain name
 
 ```javascript
-import { Blockchain } from '@depay/web3-blockchains'
+import Blockchains from '@depay/web3-blockchains'
 
-Blockchain.findByName('ethereum')
+Blockchains.findByName('ethereum')
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findByName('bsc')
+Blockchains.findByName('bsc')
 // { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 
 ### findByNetworkId: Get blockchain by network id
 
 ```javascript
-import { Blockchain } from '@depay/web3-blockchains'
+import Blockchains from '@depay/web3-blockchains'
 
-Blockchain.findByNetworkId(1)
+Blockchains.findByNetworkId(1)
 // { name: 'ethereum', id: '0x1', networkId: '1', label: 'Ethereum', logo: '...' }
 
-Blockchain.findByNetworkId('56')
+Blockchains.findByNetworkId('56')
 // { name: 'bsc', id: '0x38', networkId: '56', label: 'Binance Smart Chain', logo: '...' }
 ```
 

@@ -10,7 +10,14 @@ export default {
   currency: {
     name: 'Solana',
     symbol: 'SOL',
-    decimals: 9
+    decimals: 9,
+    address: '11111111111111111111111111111111'
+  },
+  wrapped: {
+    address: 'So11111111111111111111111111111111111111112'
+  },
+  stables: { // max. 3 per fiat currency
+    usd: ['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']
   },
   explorer: 'https://solscan.io',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -24,5 +31,7 @@ export default {
     {"address": "So11111111111111111111111111111111111111112", "symbol": "WSOL", "name": "Wrapped SOL", "decimals": 9, "logo": "https://img.raydium.io/icon/So11111111111111111111111111111111111111112.png", "type": "SPL"},
     {"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://img.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png", "type": "SPL"},
     {"address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB", "symbol": "USDT", "name": "USDT", "decimals": 6, "logo": "https://img.raydium.io/icon/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png", "type": "SPL"}
-  ]
+  ],
+  zero: '0',
+  maxInt: '340282366920938463463374607431768211455',
 }

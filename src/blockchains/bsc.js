@@ -11,7 +11,14 @@ export default {
   currency: {
     name: 'BNB',
     symbol: 'BNB',
-    decimals: 18
+    decimals: 18,
+    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
+  },
+  wrapped: {
+    address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+  },
+  stables: { // max. 3 per fiat currency
+    usd: ['0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', '0x55d398326f99059fF775485246999027B3197955', '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56']
   },
   explorer: 'https://bscscan.com',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -30,5 +37,7 @@ export default {
     {"address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82", "symbol": "Cake", "name": "PancakeSwap Token", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png", "type": "20"},
     {"address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c", "symbol": "BTCB", "name": "BTCB Token", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png", "type": "20"},
     {"address": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb", "symbol": "DEPAY", "name": "DePay", "decimals": 18, "logo": "https://integrate.depay.com/tokens/bsc/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb/image", "type": "20"},
-  ]
+  ],
+  zero: '0x0000000000000000000000000000000000000000',
+  maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
 }

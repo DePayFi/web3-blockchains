@@ -11,7 +11,14 @@ export default {
   currency: {
     name: 'Ether',
     symbol: 'ETH',
-    decimals: 18
+    decimals: 18,
+    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
+  },
+  wrapped: {
+    address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+  },
+  stables: { // max. 3 per fiat currency
+    usd: ['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7', '0x6B175474E89094C44Da98b954EedeAC495271d0F']
   },
   explorer: 'https://etherscan.io',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -31,7 +38,9 @@ export default {
     {"address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1", "symbol": "USDP", "name": "Pax Dollar", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8E870D67F660D95d5be530380D0eC0bd388289E1/logo.png", "type": "20"},
     {"address": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA", "symbol": "FEI", "name": "Fei USD", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x956F47F50A910163D8BF957Cf5846D573E7f87CA/logo.png", "type": "20"},
     {"address": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb", "symbol": "DEPAY", "name": "DePay", "decimals": 18, "logo": "https://integrate.depay.com/tokens/ethereum/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb/image", "type": "20"},
-  ]
+  ],
+  zero: '0x0000000000000000000000000000000000000000',
+  maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
 }
 
 

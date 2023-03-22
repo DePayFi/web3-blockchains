@@ -1,9 +1,9 @@
-import { Blockchain } from 'src';
+import Blockchains from 'src';
 
 describe('ethereum', () => {
   
   it('provides basic structured data', () => {
-    let blockchain = Blockchain.findByName('ethereum');
+    let blockchain = Blockchains.findByName('ethereum');
     expect(blockchain.name).toEqual('ethereum');
     expect(blockchain.id).toEqual('0x1');
     expect(blockchain.networkId).toEqual('1');
@@ -14,6 +14,9 @@ describe('ethereum', () => {
     expect(blockchain.currency.name).toEqual('Ether');
     expect(blockchain.currency.symbol).toEqual('ETH');
     expect(blockchain.currency.decimals).toEqual(18);
+    expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
+    expect(blockchain.wrapped.address).toEqual('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2');
+    expect(blockchain.stables.usd).toEqual(['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7', '0x6B175474E89094C44Da98b954EedeAC495271d0F']);
     expect(blockchain.explorer).toEqual('https://etherscan.io');
     expect(blockchain.rpc).toEqual(['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''));
     expect(blockchain.explorerUrlFor({
@@ -28,5 +31,7 @@ describe('ethereum', () => {
     expect(blockchain.explorerUrlFor({
       address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
     })).toEqual('https://etherscan.io/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
+    expect(blockchain.zero).toEqual('0x0000000000000000000000000000000000000000');
+    expect(blockchain.maxInt).toEqual('115792089237316195423570985008687907853269984665640564039457584007913129639935');
   });
 });

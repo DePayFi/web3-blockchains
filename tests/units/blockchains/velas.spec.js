@@ -1,9 +1,9 @@
-import { Blockchain } from 'src';
+import Blockchains from 'src';
 
 describe('velas', () => {
   
   it('provides basic structured data', () => {
-    let blockchain = Blockchain.findByName('velas');
+    let blockchain = Blockchains.findByName('velas');
     expect(blockchain.name).toEqual('velas');
     expect(blockchain.id).toEqual('0x6a');
     expect(blockchain.networkId).toEqual('106');
@@ -14,6 +14,9 @@ describe('velas', () => {
     expect(blockchain.currency.name).toEqual('Velas');
     expect(blockchain.currency.symbol).toEqual('VLX');
     expect(blockchain.currency.decimals).toEqual(18);
+    expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
+    expect(blockchain.wrapped.address).toEqual('0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126');
+    expect(blockchain.stables.usd).toEqual(['0xc111c29A988AE0C0087D97b33C6E6766808A3BD3', '0x01445C31581c354b7338AC35693AB2001B50b9aE']);
     expect(blockchain.explorer).toEqual('https://evmexplorer.velas.com');
     expect(blockchain.rpc).toEqual('https://evmexplorer.velas.com/rpc');
     expect(blockchain.explorerUrlFor({
@@ -28,5 +31,7 @@ describe('velas', () => {
     expect(blockchain.explorerUrlFor({
       address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
     })).toEqual('https://evmexplorer.velas.com/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
+    expect(blockchain.zero).toEqual('0x0000000000000000000000000000000000000000');
+    expect(blockchain.maxInt).toEqual('115792089237316195423570985008687907853269984665640564039457584007913129639935');
   });
 });
