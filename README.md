@@ -52,6 +52,15 @@ findByNetworkId(1)
 // { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
 ```
 
+or 
+
+```javascript
+import Blockchains from '@depay/web3-blockchains'
+
+Blockchains['ethereums']
+// { name: 'ethereum', id: '0x1', label: 'Ethereum', logo: '...' }
+```
+
 ## Support
 
 This library supports the following blockchains:
