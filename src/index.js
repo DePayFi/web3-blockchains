@@ -41,6 +41,13 @@ const findByName = function (name) {
 }
 
 export default {
+  ethereum,
+  bsc,
+  polygon,
+  solana,
+  fantom,
+  velas,
+  
   all,
   findById,
   findByNetworkId,

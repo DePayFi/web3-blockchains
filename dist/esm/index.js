@@ -287,6 +287,13 @@ const findByName = function (name) {
 };
 
 var index = {
+  ethereum,
+  bsc,
+  polygon,
+  solana,
+  fantom,
+  velas,
+  
   all,
   findById,
   findByNetworkId,
