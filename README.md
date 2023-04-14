@@ -92,11 +92,15 @@ Blockchain data is provided in the following structure:
     address: String, // address or placeholder address
   },
   wrapped: { Object
-    address: String // address of the wrapped native scurrency
+    address: String, // address of the wrapped native scurrency
+    decimals: Integer, // 18 
   },
   stables: { Object
     usd: [ Array
-      String // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+      { Object
+        address: String, // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+        decimals: Integer, // 18
+      }, ...
     ]
   },
   explorer: String (URL), // https://etherscan.io, https://bncscan.com, ...
