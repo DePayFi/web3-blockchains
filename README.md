@@ -105,7 +105,9 @@ Blockchain data is provided in the following structure:
   },
   explorer: String (URL), // https://etherscan.io, https://bncscan.com, ...
   explorerUrlFor: Function ({ transaction || token }) returns String, // https://etherscan.io/tx/..., https://etherscan.io/token/...
-  rpc: String (URL), // ...
+  endpoints: [ Array
+    String (URL), // https://rpc.ankr.com/eth
+  ],
   tokens: [ Array
     { Object
       address: String, // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48

@@ -26,7 +26,11 @@ export default {
     if(token) { return `https://etherscan.io/token/${token}` }
     if(address) { return `https://etherscan.io/address/${address}` }
   },
-  rpc: ['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''),
+  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+    'https://rpc.ankr.com/eth',
+    'https://eth.llamarpc.com',
+    'https://ethereum.publicnode.com'
+  ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png", "type": "20"},

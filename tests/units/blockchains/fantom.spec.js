@@ -18,7 +18,11 @@ describe('fantom', () => {
     expect(blockchain.wrapped.address).toEqual('0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83');
     expect(blockchain.stables.usd).toEqual(['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', '0x049d68029688eAbF473097a2fC38ef61633A3C7A', '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E']);
     expect(blockchain.explorer).toEqual('https://ftmscan.com');
-    expect(blockchain.rpc).toEqual('https://endpoints.omniatech.io/v1/fantom/mainnet/public');
+    expect(blockchain.endpoints).toEqual([
+      'https://rpc.ftm.tools',
+      'https://fantom.publicnode.com',
+      'https://rpc2.fantom.network'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://ftmscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

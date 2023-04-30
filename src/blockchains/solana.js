@@ -25,6 +25,11 @@ export default {
     if(token) { return `https://solscan.io/token/${token}` }
     if(address) { return `https://solscan.io/address/${address}` }
   },
+  endpoints: [
+    'https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
+    'https://mainnet-beta.solflare.network',
+    'https://solana-mainnet.rpc.extrnode.com'
+  ],
   rpc: 'https://api.mainnet-beta.solana.com',
   tokens: [ // only major tokens
     {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": logo, "type": "NATIVE"},

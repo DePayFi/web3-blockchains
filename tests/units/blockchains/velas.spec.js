@@ -18,7 +18,11 @@ describe('velas', () => {
     expect(blockchain.wrapped.address).toEqual('0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126');
     expect(blockchain.stables.usd).toEqual(['0xc111c29A988AE0C0087D97b33C6E6766808A3BD3', '0x01445C31581c354b7338AC35693AB2001B50b9aE']);
     expect(blockchain.explorer).toEqual('https://evmexplorer.velas.com');
-    expect(blockchain.rpc).toEqual('https://evmexplorer.velas.com/rpc');
+    expect(blockchain.endpoints).toEqual([
+      'https://mainnet.velas.com/rpc',
+      'https://evmexplorer.velas.com/rpc',
+      'https://explorer.velas.com/rpc'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://evmexplorer.velas.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

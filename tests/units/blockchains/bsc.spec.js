@@ -18,7 +18,11 @@ describe('bsc', () => {
     expect(blockchain.wrapped.address).toEqual('0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c');
     expect(blockchain.stables.usd).toEqual(['0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', '0x55d398326f99059fF775485246999027B3197955', '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56']);
     expect(blockchain.explorer).toEqual('https://bscscan.com');
-    expect(blockchain.rpc).toEqual('https://bsc-dataseed1.binance.org');
+    expect(blockchain.endpoints).toEqual([
+      'https://bsc-dataseed.binance.org',
+      'https://bsc-dataseed1.ninicoin.io',
+      'https://bsc-dataseed3.defibit.io'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://bscscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

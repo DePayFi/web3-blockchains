@@ -26,7 +26,11 @@ export default {
     if(token) { return `https://bscscan.com/token/${token}` }
     if(address) { return `https://bscscan.com/address/${address}` }
   },
-  rpc: 'https://bsc-dataseed1.binance.org',
+  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+    'https://bsc-dataseed.binance.org',
+    'https://bsc-dataseed1.ninicoin.io',
+    'https://bsc-dataseed3.defibit.io'
+  ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "symbol": "WBNB", "name": "Wrapped BNB", "decimals": 18, "logo": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png", "type": "20"},

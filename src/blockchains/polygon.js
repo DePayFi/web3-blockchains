@@ -26,7 +26,11 @@ export default {
     if(token) { return `https://polygonscan.com/token/${token}` }
     if(address) { return `https://polygonscan.com/address/${address}` }
   },
-  rpc: 'https://rpc-mainnet.matic.network',
+  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+    'https://polygon-rpc.com',
+    'https://poly-rpc.gateway.pokt.network',
+    'https://matic-mainnet.chainstacklabs.com'
+  ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "MATIC", "name": "Polygon", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270", "symbol": "WMATIC", "name": "Wrapped Matic", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png", "type": "20"},

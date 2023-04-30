@@ -18,7 +18,11 @@ describe('polygon', () => {
     expect(blockchain.wrapped.address).toEqual('0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270');
     expect(blockchain.stables.usd).toEqual(['0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063']);
     expect(blockchain.explorer).toEqual('https://polygonscan.com');
-    expect(blockchain.rpc).toEqual('https://rpc-mainnet.matic.network');
+    expect(blockchain.endpoints).toEqual([
+      'https://polygon-rpc.com',
+      'https://poly-rpc.gateway.pokt.network',
+      'https://matic-mainnet.chainstacklabs.com'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://polygonscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

@@ -18,7 +18,11 @@ describe('ethereum', () => {
     expect(blockchain.wrapped.address).toEqual('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2');
     expect(blockchain.stables.usd).toEqual(['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7', '0x6B175474E89094C44Da98b954EedeAC495271d0F']);
     expect(blockchain.explorer).toEqual('https://etherscan.io');
-    expect(blockchain.rpc).toEqual(['https://mainnet.infura.io/v3/9aa3d95b3bc4', '40fa88ea12eaa4456161'].join(''));
+    expect(blockchain.endpoints).toEqual([
+      'https://rpc.ankr.com/eth',
+      'https://eth.llamarpc.com',
+      'https://ethereum.publicnode.com'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://etherscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

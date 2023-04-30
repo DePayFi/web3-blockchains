@@ -17,7 +17,11 @@ describe('solana', () => {
     expect(blockchain.wrapped.address).toEqual('So11111111111111111111111111111111111111112');
     expect(blockchain.stables.usd).toEqual(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
     expect(blockchain.explorer).toEqual('https://solscan.io');
-    expect(blockchain.rpc).toEqual('https://api.mainnet-beta.solana.com');
+    expect(blockchain.endpoints).toEqual([
+      'https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
+      'https://mainnet-beta.solflare.network',
+      'https://solana-mainnet.rpc.extrnode.com'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
     })).toEqual('https://solscan.io/tx/3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC')

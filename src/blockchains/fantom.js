@@ -26,7 +26,11 @@ export default {
     if(token) { return `https://ftmscan.com/token/${token}` }
     if(address) { return `https://ftmscan.com/address/${address}` }
   },
-  rpc: 'https://endpoints.omniatech.io/v1/fantom/mainnet/public',
+  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+    'https://rpc.ftm.tools',
+    'https://fantom.publicnode.com',
+    'https://rpc2.fantom.network'
+  ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "FTM", "name": "Fantom", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83", "symbol": "WFTM", "name": "Wrapped Fantom", "decimals": 18, "logo": logo, "type": "20"},

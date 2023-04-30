@@ -26,7 +26,11 @@ export default {
     if(token) { return `https://evmexplorer.velas.com/token/${token}` }
     if(address) { return `https://evmexplorer.velas.com/address/${address}` }
   },
-  rpc: 'https://evmexplorer.velas.com/rpc',
+  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+    'https://mainnet.velas.com/rpc',
+    'https://evmexplorer.velas.com/rpc',
+    'https://explorer.velas.com/rpc'
+  ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "VLX", "name": "Velas", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126", "symbol": "WVLX", "name": "Wrapped Velas", "decimals": 18, "logo": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xc579d1f3cf86749e05cd06f7ade17856c2ce3126/logo.png?raw=true", "type": "20"},
