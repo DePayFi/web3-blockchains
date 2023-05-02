@@ -29,7 +29,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
     'https://polygon-rpc.com',
     'https://poly-rpc.gateway.pokt.network',
-    'https://matic-mainnet.chainstacklabs.com'
+    'https://polygon.llamarpc.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "MATIC", "name": "Polygon", "decimals": 18, "logo": logo, "type": "NATIVE"},
