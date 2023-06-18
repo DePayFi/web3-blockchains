@@ -12,7 +12,8 @@ export default {
     name: 'Fantom',
     symbol: 'FTM',
     decimals: 18,
-    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
+    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
+    logo
   },
   wrapped: {
     address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'

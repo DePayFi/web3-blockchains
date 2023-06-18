@@ -3,7 +3,10 @@ import ethereum from './blockchains/ethereum'
 import fantom from './blockchains/fantom'
 import polygon from './blockchains/polygon'
 import solana from './blockchains/solana'
-import velas from './blockchains/velas'
+import arbitrum from './blockchains/arbitrum'
+import avalanche from './blockchains/avalanche'
+import gnosis from './blockchains/gnosis'
+import optimism from './blockchains/optimism'
 
 const all = [
   ethereum,
@@ -11,7 +14,10 @@ const all = [
   polygon,
   solana,
   fantom,
-  velas
+  arbitrum,
+  avalanche,
+  gnosis,
+  optimism,
 ]
 
 const findById = function (id) {
@@ -46,7 +52,10 @@ export default {
   polygon,
   solana,
   fantom,
-  velas,
+  arbitrum,
+  avalanche,
+  gnosis,
+  optimism,
   
   all,
   findById,

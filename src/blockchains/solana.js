@@ -5,13 +5,14 @@ export default {
   networkId: 'mainnetBeta',
   namespace: 'solana',
   label: 'Solana',
-  fullName: 'Solana',
+  fullName: 'Solana Mainnet Beta',
   logo,
   currency: {
     name: 'Solana',
     symbol: 'SOL',
     decimals: 9,
-    address: '11111111111111111111111111111111'
+    address: '11111111111111111111111111111111',
+    logo
   },
   wrapped: {
     address: 'So11111111111111111111111111111111111111112'
@@ -38,6 +39,7 @@ export default {
     {"address": "7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj", "symbol": "stSOL", "name": "Lido Staked SOL", "decimals": 9, "logo": "https://img.raydium.io/icon/7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj.png", "type": "SPL"},
     {"address": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263", "symbol": "BONK", "name": "BONK", "decimals": 5, "logo": "https://img.raydium.io/icon/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263.png", "type": "SPL"},
     {"address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU", "symbol": "SAMO", "name": "Samoyed Coin", "decimals": 9, "logo": "https://img.raydium.io/icon/7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU.png", "type": "SPL"},
+    {"address": "DePay1miDBPWXs6PVQrdC5Vch2jemgEPaiyXLNLLa2NF", "symbol": "DEPAY", "name": "DePay", "decimals": 9, "logo": "https://depay.com/favicon.png", "type": "SPL"},
   ],
   zero: '0',
   maxInt: '340282366920938463463374607431768211455',
