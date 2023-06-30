@@ -15,7 +15,8 @@ export default {
     logo
   },
   wrapped: {
-    address: 'So11111111111111111111111111111111111111112'
+    address: 'So11111111111111111111111111111111111111112',
+    logo
   },
   stables: { // max. 3 per fiat currency
     usd: ['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']

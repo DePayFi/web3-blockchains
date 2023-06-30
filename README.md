@@ -98,6 +98,7 @@ Blockchain data is provided in the following structure:
   wrapped: { Object
     address: String, // address of the wrapped native scurrency
     decimals: Integer, // 18 
+    logo: String (base64 data or URL)
   },
   stables: { Object
     usd: [ Array

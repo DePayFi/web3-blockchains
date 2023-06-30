@@ -16,7 +16,8 @@ export default {
     logo
   },
   wrapped: {
-    address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83'
+    address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+    logo
   },
   stables: { // max. 3 per fiat currency
     usd: ['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', '0x049d68029688eAbF473097a2fC38ef61633A3C7A', '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E']
