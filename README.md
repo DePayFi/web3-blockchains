@@ -113,6 +113,9 @@ Blockchain data is provided in the following structure:
   endpoints: [ Array
     String (URL), // https://rpc.ankr.com/eth
   ],
+  sockets: [ // Array || undefined
+    String (URL), // wss://mainnet-beta.solflare.network
+  ],
   tokens: [ Array
     { Object
       address: String, // 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48

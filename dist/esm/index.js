@@ -237,7 +237,10 @@ var solana = {
     'https://mainnet-beta.solflare.network',
     'https://solana-mainnet.rpc.extrnode.com'
   ],
-  rpc: 'https://api.mainnet-beta.solana.com',
+  sockets: [
+    'wss://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
+    'wss://mainnet-beta.solflare.network'
+  ],
   tokens: [ // only major tokens
     {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": logo$4, "type": "NATIVE"},
     {"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://img.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png", "type": "SPL"},
