@@ -22,7 +22,7 @@ describe('optimism', () => {
     expect(blockchain.endpoints).toEqual([
       'https://optimism.blockpi.network/v1/rpc/public',
       'https://optimism.meowrpc.com',
-      'https://optimism.publicnode.com'
+      'https://mainnet.optimism.io'
     ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
