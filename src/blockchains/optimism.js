@@ -33,7 +33,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
     'https://optimism.blockpi.network/v1/rpc/public',
     'https://optimism.meowrpc.com',
-    'https://mainnet.optimism.io'
+    'https://optimism.publicnode.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.logo, "type": "NATIVE"},
