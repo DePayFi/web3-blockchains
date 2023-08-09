@@ -17,7 +17,7 @@ describe('fantom', () => {
     expect(blockchain.currency.decimals).toEqual(18);
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.address).toEqual('0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83');
-    expect(blockchain.stables.usd).toEqual(['0x28a92dde19d9989f39a49905d7c9c2fac7799bdf', '0x1b6382dbdea11d97f24495c9a90b7c88469134a4']);
+    expect(blockchain.stables.usd).toEqual(['0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf', '0x1B6382DBDEa11d97f24495C9A90b7c88469134a4']);
     expect(blockchain.explorer).toEqual('https://ftmscan.com');
     expect(blockchain.endpoints).toEqual([
       'https://rpc.ftm.tools',
