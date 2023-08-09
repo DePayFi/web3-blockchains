@@ -38,7 +38,7 @@ export default {
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.logo, "type": "NATIVE"},
     {"address": "0x4200000000000000000000000000000000000006", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
-    {"address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA", "symbol": "USDbC", "name": "USD Base Coin", "decimals": 6, "logo": "https://basescan.org/images/main/empty-token.png", "type": "20"},
+    {"address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA", "symbol": "USDbC", "name": "USD Base Coin", "decimals": 6, "logo": "https://assets.coingecko.com/coins/images/31164/small/baseusdc.jpg", "type": "20"},
     {"address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://basescan.org/images/main/empty-token.png", "type": "20"},
   ],
   zero: '0x0000000000000000000000000000000000000000',

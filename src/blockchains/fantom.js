@@ -20,7 +20,7 @@ export default {
     logo
   },
   stables: { // max. 3 per fiat currency
-    usd: ['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', '0x049d68029688eAbF473097a2fC38ef61633A3C7A', '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E']
+    usd: ['0x28a92dde19d9989f39a49905d7c9c2fac7799bdf', '0x1b6382dbdea11d97f24495c9a90b7c88469134a4']
   },
   explorer: 'https://ftmscan.com',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -36,11 +36,8 @@ export default {
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "FTM", "name": "Fantom", "decimals": 18, "logo": logo, "type": "NATIVE"},
     {"address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83", "symbol": "WFTM", "name": "Wrapped Fantom", "decimals": 18, "logo": logo, "type": "20"},
-    {"address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
-    {"address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E", "symbol": "DAI", "name": "Dai Stablecoin", "decimals": 18, "logo": "https://assets.spooky.fi/tokens/DAI.png", "type": "20"},
-    {"address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A", "symbol": "fUSDT", "name": "Frapped USDT", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/fUSDT.png", "type": "20"},
-    {"address": "0x74b23882a30290451A17c44f4F05243b6b58C76d", "symbol": "ETH", "name": "Ethereum", "decimals": 18, "logo": "https://assets.spooky.fi/tokens/wETH.png", "type": "20"},
-    {"address": "0x321162Cd933E2Be498Cd2267a90534A804051b11", "symbol": "BTC", "name": "Bitcoin", "decimals": 8, "logo": "https://assets.spooky.fi/tokens/wBTC.png", "type": "20"},
+    {"address": "0x28a92dde19d9989f39a49905d7c9c2fac7799bdf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
+    {"address": "0x1b6382dbdea11d97f24495c9a90b7c88469134a4", "symbol": "Axelar Wrapped", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
   ],
   zero: '0x0000000000000000000000000000000000000000',
   maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
