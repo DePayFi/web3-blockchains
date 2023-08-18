@@ -19,7 +19,7 @@ describe('arbitrum', () => {
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.address).toEqual('0x82aF49447D8a07e3bd95BD0d56f35241523fBab1');
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
-    expect(blockchain.stables.usd).toEqual(['0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9', '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']);
+    expect(blockchain.stables.usd).toEqual(['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']);
     expect(blockchain.explorer).toEqual('https://arbiscan.io');
     expect(blockchain.endpoints).toEqual([
       'https://arbitrum.blockpi.network/v1/rpc/public',
