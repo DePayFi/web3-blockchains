@@ -88,18 +88,19 @@ Blockchain data is provided in the following structure:
   namespace: String, // eip155, solana, ...
   label: String, // Ethereum, Binance Smart Chain ...
   fullName: String, // Ethereum Mainnet, Binance Smart Chain Mainnet ...
-  logo: String (base64 data or URL),
+  logo: String, // base64 data or URL
+  logoBackgroundColor: String // hex color
   currency: { Object
     name: String, // Ether, Binance Coin, ...
     symbol: String, // ETH, BNB, ...
     decimals: String, // 18
     address: String, // address or placeholder address
-    logo: String (base64 data or URL)
+    logo: String, // base64 data or URL,
   },
   wrapped: { Object
     address: String, // address of the wrapped native scurrency
     decimals: Integer, // 18 
-    logo: String (base64 data or URL)
+    logo: String, // base64 data or URL
   },
   stables: { Object
     usd: [ Array
