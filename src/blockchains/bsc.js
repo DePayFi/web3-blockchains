@@ -12,6 +12,7 @@ export default {
   fullName: 'BNB Smart Chain Mainnet',
   logo,
   logoBackgroundColor: '#000000',
+  logoWhiteBackground: logo,
   currency: {
     name: 'BNB',
     symbol: 'BNB',

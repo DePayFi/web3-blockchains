@@ -12,6 +12,7 @@ export default {
   fullName: 'Arbitrum One',
   logo,
   logoBackgroundColor: '#2b354d',
+  logoWhiteBackground: logo,
   currency: {
     name: 'Ether',
     symbol: 'ETH',

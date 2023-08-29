@@ -9,6 +9,7 @@ export default {
   fullName: 'Solana Mainnet Beta',
   logo,
   logoBackgroundColor: '#000000',
+  logoWhiteBackground: logo,
   currency: {
     name: 'Solana',
     symbol: 'SOL',
