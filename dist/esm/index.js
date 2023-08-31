@@ -216,7 +216,7 @@ const currencyLogo$2 = 'https://img.raydium.io/icon/So11111111111111111111111111
 
 var solana = {
   name: 'solana',
-  networkId: 'mainnetBeta',
+  networkId: 'solana',
   namespace: 'solana',
   label: 'Solana',
   fullName: 'Solana Mainnet Beta',

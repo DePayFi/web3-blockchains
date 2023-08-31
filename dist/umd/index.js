@@ -222,7 +222,7 @@
 
   var solana = {
     name: 'solana',
-    networkId: 'mainnetBeta',
+    networkId: 'solana',
     namespace: 'solana',
     label: 'Solana',
     fullName: 'Solana Mainnet Beta',

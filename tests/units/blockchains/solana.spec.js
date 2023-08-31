@@ -5,7 +5,7 @@ describe('solana', () => {
   it('provides basic structured data', () => {
     let blockchain = Blockchains.findByName('solana');
     expect(blockchain.name).toEqual('solana');
-    expect(blockchain.networkId).toEqual('mainnetBeta');
+    expect(blockchain.networkId).toEqual('solana');
     expect(blockchain.namespace).toEqual('solana');
     expect(blockchain.label).toEqual('Solana');
     expect(blockchain.fullName).toEqual('Solana Mainnet Beta');

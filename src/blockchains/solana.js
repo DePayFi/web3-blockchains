@@ -3,7 +3,7 @@ const currencyLogo = 'https://img.raydium.io/icon/So1111111111111111111111111111
 
 export default {
   name: 'solana',
-  networkId: 'mainnetBeta',
+  networkId: 'solana',
   namespace: 'solana',
   label: 'Solana',
   fullName: 'Solana Mainnet Beta',
