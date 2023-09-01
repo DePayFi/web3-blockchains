@@ -4,7 +4,7 @@ const wrappedLogo = "https://assets.spooky.fi/tokens/wFTM.png"
 
 export default {
   name: 'fantom',
-  id: '0xFA',
+  id: '0xfa',
   networkId: '250',
   namespace: 'eip155',
   label: 'Fantom',

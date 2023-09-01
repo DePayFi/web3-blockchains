@@ -115,7 +115,7 @@ const wrappedLogo$3 = "https://assets.spooky.fi/tokens/wFTM.png";
 
 var fantom = {
   name: 'fantom',
-  id: '0xFA',
+  id: '0xfa',
   networkId: '250',
   namespace: 'eip155',
   label: 'Fantom',

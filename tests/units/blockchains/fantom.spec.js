@@ -5,7 +5,7 @@ describe('fantom', () => {
   it('provides basic structured data', () => {
     let blockchain = Blockchains.findByName('fantom');
     expect(blockchain.name).toEqual('fantom');
-    expect(blockchain.id).toEqual('0xFA');
+    expect(blockchain.id).toEqual('0xfa');
     expect(blockchain.networkId).toEqual('250');
     expect(blockchain.namespace).toEqual('eip155');
     expect(blockchain.label).toEqual('Fantom');
