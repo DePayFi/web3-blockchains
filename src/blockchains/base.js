@@ -24,7 +24,7 @@ export default {
     logo: ethereum.wrapped.logo,
   },
   stables: { // max. 3 per fiat currency
-    usd: ['0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA', '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb']
+    usd: ['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA', '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb']
   },
   explorer: 'https://basescan.org',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -40,6 +40,7 @@ export default {
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
     {"address": "0x4200000000000000000000000000000000000006", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
+    {"address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": "https://ethereum-optimism.github.io/data/USDC/logo.png", "type": "20"},
     {"address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA", "symbol": "USDbC", "name": "USD Base Coin", "decimals": 6, "logo": "https://ethereum-optimism.github.io/data/USDC/logo.png", "type": "20"},
     {"address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb", "symbol": "DAI", "name": "Dai Stablecoin", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png", "type": "20"},
   ],
