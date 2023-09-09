@@ -19,7 +19,7 @@ describe('avalanche', () => {
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.address).toEqual('0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7');
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7/logo.png");
-    expect(blockchain.stables.usd).toEqual(['0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E', '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70']);
+    expect(blockchain.stables.usd).toEqual(['0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E']);
     expect(blockchain.explorer).toEqual('https://snowtrace.io');
     expect(blockchain.endpoints).toEqual([
       'https://avalanche.public-rpc.com',

@@ -23,8 +23,8 @@ export default {
     address: '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d',
     logo: wrappedLogo,
   },
-  stables: { // max. 3 per fiat currency
-    usd: ['0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', '0x4ECaBa5870353805a9F068101A40E0f32ed605C6', '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83']
+  stables: { // max. 2 per fiat currency
+    usd: ['0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83']
   },
   explorer: 'https://gnosisscan.io',
   explorerUrlFor: ({ transaction, token, address })=>{

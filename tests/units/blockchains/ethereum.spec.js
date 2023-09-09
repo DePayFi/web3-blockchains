@@ -19,7 +19,7 @@ describe('ethereum', () => {
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
     expect(blockchain.wrapped.address).toEqual('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2');
-    expect(blockchain.stables.usd).toEqual(['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7', '0x6B175474E89094C44Da98b954EedeAC495271d0F']);
+    expect(blockchain.stables.usd).toEqual(['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7']);
     expect(blockchain.explorer).toEqual('https://etherscan.io');
     expect(blockchain.endpoints).toEqual([
       'https://rpc.ankr.com/eth',

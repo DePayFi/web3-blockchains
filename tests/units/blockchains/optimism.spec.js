@@ -19,7 +19,7 @@ describe('optimism', () => {
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
     expect(blockchain.wrapped.address).toEqual('0x4200000000000000000000000000000000000006');
-    expect(blockchain.stables.usd).toEqual(['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']);
+    expect(blockchain.stables.usd).toEqual(['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607']);
     expect(blockchain.explorer).toEqual('https://optimistic.etherscan.io');
     expect(blockchain.endpoints).toEqual([
       'https://optimism.blockpi.network/v1/rpc/public',

@@ -24,8 +24,8 @@ export default {
     address: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     logo: ethereum.wrapped.logo,
   },
-  stables: { // max. 3 per fiat currency
-    usd: ['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']
+  stables: { // max. 2 per fiat currency
+    usd: ['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9']
   },
   explorer: 'https://arbiscan.io',
   explorerUrlFor: ({ transaction, token, address })=>{

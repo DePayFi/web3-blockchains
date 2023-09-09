@@ -24,7 +24,7 @@ export default {
     address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     logo: wrappedLogo,
   },
-  stables: { // max. 3 per fiat currency
+  stables: { // max. 2 per fiat currency
     usd: ['0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', '0x55d398326f99059fF775485246999027B3197955']
   },
   explorer: 'https://bscscan.com',

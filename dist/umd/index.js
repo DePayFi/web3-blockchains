@@ -30,7 +30,7 @@
       address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
       logo: wrappedLogo$5,
     },
-    stables: { // max. 3 per fiat currency
+    stables: { // max. 2 per fiat currency
       usd: ['0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', '0x55d398326f99059fF775485246999027B3197955']
     },
     explorer: 'https://bscscan.com',
@@ -85,8 +85,8 @@
       logo: wrappedLogo$4,
       logoBackgroundColor: '#FFFFFF',
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7', '0x6B175474E89094C44Da98b954EedeAC495271d0F']
+    stables: { // max. 2 per fiat currency
+      usd: ['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xdAC17F958D2ee523a2206206994597C13D831ec7']
     },
     explorer: 'https://etherscan.io',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -140,7 +140,7 @@
       address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
       logo: wrappedLogo$3,
     },
-    stables: { // max. 3 per fiat currency
+    stables: { // max. 2 per fiat currency
       usd: ['0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf', '0x1B6382DBDEa11d97f24495C9A90b7c88469134a4']
     },
     explorer: 'https://ftmscan.com',
@@ -158,7 +158,7 @@
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "FTM", "name": "Fantom", "decimals": 18, "logo": currencyLogo$4, "type": "NATIVE"},
       {"address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83", "symbol": "WFTM", "name": "Wrapped Fantom", "decimals": 18, "logo": wrappedLogo$3, "type": "20"},
       {"address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
-      {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "Axelar Wrapped", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
+      {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
     ],
     zero: '0x0000000000000000000000000000000000000000',
     maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
@@ -189,8 +189,8 @@
       address: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
       logo: wrappedLogo$2,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063']
+    stables: { // max. 2 per fiat currency
+      usd: ['0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', '0xc2132D05D31c914a87C6611C10748AEb04B58e8F']
     },
     explorer: 'https://polygonscan.com',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -240,7 +240,7 @@
       address: 'So11111111111111111111111111111111111111112',
       logo: currencyLogo$2,
     },
-    stables: { // max. 3 per fiat currency
+    stables: { // max. 2 per fiat currency
       usd: ['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']
     },
     explorer: 'https://solscan.io',
@@ -295,8 +295,8 @@
       address: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
       logo: ethereum.wrapped.logo,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']
+    stables: { // max. 2 per fiat currency
+      usd: ['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9']
     },
     explorer: 'https://arbiscan.io',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -347,8 +347,8 @@
       address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
       logo: wrappedLogo$1,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E', '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70']
+    stables: { // max. 2 per fiat currency
+      usd: ['0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E']
     },
     explorer: 'https://snowtrace.io',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -398,8 +398,8 @@
       address: '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d',
       logo: wrappedLogo,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', '0x4ECaBa5870353805a9F068101A40E0f32ed605C6', '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83']
+    stables: { // max. 2 per fiat currency
+      usd: ['0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83']
     },
     explorer: 'https://gnosisscan.io',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -447,8 +447,8 @@
       address: '0x4200000000000000000000000000000000000006',
       logo: ethereum.wrapped.logo,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607', '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1']
+    stables: { // max. 2 per fiat currency
+      usd: ['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607']
     },
     explorer: 'https://optimistic.etherscan.io',
     explorerUrlFor: ({ transaction, token, address })=>{
@@ -496,8 +496,8 @@
       address: '0x4200000000000000000000000000000000000006',
       logo: ethereum.wrapped.logo,
     },
-    stables: { // max. 3 per fiat currency
-      usd: ['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA', '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb']
+    stables: { // max. 2 per fiat currency
+      usd: ['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA']
     },
     explorer: 'https://basescan.org',
     explorerUrlFor: ({ transaction, token, address })=>{
