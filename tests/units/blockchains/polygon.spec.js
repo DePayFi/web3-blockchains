@@ -12,7 +12,7 @@ describe('polygon', () => {
     expect(blockchain.fullName).toEqual('Polygon (POS) Mainnet');
     expect(blockchain.logo != undefined).toEqual(true);
     expect(blockchain.logoBackgroundColor).toEqual('#824ee2');
-    expect(blockchain.currency.logo).toEqual("https://app.uniswap.org/static/media/matic-token-icon.da7b877d41122a55de4a43760bb4c8e5.svg");
+    expect(blockchain.currency.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/polygon/info/logo.png");
     expect(blockchain.currency.name).toEqual('Polygon');
     expect(blockchain.currency.symbol).toEqual('MATIC');
     expect(blockchain.currency.decimals).toEqual(18);
