@@ -34,7 +34,7 @@ export default {
   },
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
     'https://polygon-rpc.com',
-    'https://poly-rpc.gateway.pokt.network',
+    'https://polygon-pokt.nodies.app',
     'https://polygon.llamarpc.com'
   ],
   tokens: [ // only major tokens
