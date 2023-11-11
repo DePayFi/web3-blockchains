@@ -23,7 +23,7 @@ describe('polygon', () => {
     expect(blockchain.explorer).toEqual('https://polygonscan.com');
     expect(blockchain.endpoints).toEqual([
       'https://polygon-rpc.com',
-      'https://poly-rpc.gateway.pokt.network',
+      'https://polygon-pokt.nodies.app',
       'https://polygon.llamarpc.com'
     ]);
     expect(blockchain.explorerUrlFor({
