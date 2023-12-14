@@ -252,7 +252,7 @@
     endpoints: [
       'https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
       'https://mainnet-beta.solflare.network',
-      'https://solana-mainnet.rpc.extrnode.com'
+      'https://swr.xnftdata.com/rpc-proxy'
     ],
     sockets: [
       'wss://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
