@@ -23,7 +23,7 @@ describe('solana', () => {
     expect(blockchain.endpoints).toEqual([
       'https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ',
       'https://mainnet-beta.solflare.network',
-      'https://solana-mainnet.rpc.extrnode.com'
+      'https://swr.xnftdata.com/rpc-proxy'
     ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
