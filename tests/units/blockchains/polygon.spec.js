@@ -24,7 +24,7 @@ describe('polygon', () => {
     expect(blockchain.endpoints).toEqual([
       'https://polygon-rpc.com',
       'https://polygon.meowrpc.com',
-      'https://polygon.llamarpc.com'
+      'https://polygon-pokt.nodies.app'
     ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }

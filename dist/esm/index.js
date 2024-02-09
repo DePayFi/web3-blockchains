@@ -195,7 +195,7 @@ var polygon = {
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
     'https://polygon-rpc.com',
     'https://polygon.meowrpc.com',
-    'https://polygon.llamarpc.com'
+    'https://polygon-pokt.nodies.app'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "MATIC", "name": "Polygon", "decimals": 18, "logo": currencyLogo$3, "type": "NATIVE"},
