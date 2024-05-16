@@ -244,7 +244,7 @@ var solana = {
     if(address) { return `https://solscan.io/address/${address}` }
   },
   endpoints: [
-    'https://solana.drpc.org',
+    'https://solana.a.exodus.io',
     'https://mainnet-beta.solflare.network',
     'https://swr.xnftdata.com/rpc-proxy'
   ],

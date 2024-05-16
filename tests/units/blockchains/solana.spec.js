@@ -21,7 +21,7 @@ describe('solana', () => {
     expect(blockchain.stables.usd).toEqual(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
     expect(blockchain.explorer).toEqual('https://solscan.io');
     expect(blockchain.endpoints).toEqual([
-      'https://solana.drpc.org',
+      'https://solana.a.exodus.io',
       'https://mainnet-beta.solflare.network',
       'https://swr.xnftdata.com/rpc-proxy'
     ]);
