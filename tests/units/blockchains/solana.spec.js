@@ -25,6 +25,11 @@ describe('solana', () => {
       'https://mainnet-beta.solflare.network',
       'https://swr.xnftdata.com/rpc-proxy'
     ]);
+    expect(blockchain.sockets).toEqual([
+      'wss://solana.drpc.org',
+      'wss://mainnet-beta.solflare.network',
+      'wss://solana.a.exodus.io'
+    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
     })).toEqual('https://solscan.io/tx/3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC')
