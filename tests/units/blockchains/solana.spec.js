@@ -24,8 +24,7 @@ describe('solana', () => {
       'https://swr.xnftdata.com/rpc-proxy',
       'https://solana-rpc.publicnode.com',
       'https://mainnet-beta.solflare.network',
-      'https://endpoints.omniatech.io/v1/sol/mainnet/public',
-      'https://solana.api.onfinality.io/public'
+      'https://endpoints.omniatech.io/v1/sol/mainnet/public'
     ]);
     expect(blockchain.sockets).toEqual([
       'wss://solana.drpc.org',
