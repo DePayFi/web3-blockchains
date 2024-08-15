@@ -23,13 +23,12 @@ describe('solana', () => {
     expect(blockchain.endpoints).toEqual([
       'https://swr.xnftdata.com/rpc-proxy',
       'https://solana-rpc.publicnode.com',
-      'https://mainnet-beta.solflare.network',
       'https://endpoints.omniatech.io/v1/sol/mainnet/public'
     ]);
     expect(blockchain.sockets).toEqual([
       'wss://solana.drpc.org',
       'wss://mainnet-beta.solflare.network',
-      'wss://solana.a.exodus.io'
+      'wss://solana-rpc.publicnode.com'
     ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
