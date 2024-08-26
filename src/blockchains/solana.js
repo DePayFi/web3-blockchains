@@ -51,4 +51,5 @@ export default {
   ],
   zero: '0',
   maxInt: '340282366920938463463374607431768211455',
+  permit2: undefined
 }
