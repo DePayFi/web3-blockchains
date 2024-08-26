@@ -22,7 +22,7 @@ describe('optimism', () => {
     expect(blockchain.stables.usd).toEqual(['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607']);
     expect(blockchain.explorer).toEqual('https://optimistic.etherscan.io');
     expect(blockchain.endpoints).toEqual([
-      'https://optimism.blockpi.network/v1/rpc/public',
+      'https://mainnet.optimism.io',
       'https://optimism.meowrpc.com',
       'https://optimism.publicnode.com'
     ]);

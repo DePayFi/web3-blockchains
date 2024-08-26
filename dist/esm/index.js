@@ -460,7 +460,7 @@ var optimism = {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://optimism.blockpi.network/v1/rpc/public',
+    'https://mainnet.optimism.io',
     'https://optimism.meowrpc.com',
     'https://optimism.publicnode.com'
   ],
