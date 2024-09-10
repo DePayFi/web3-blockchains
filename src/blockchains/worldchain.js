@@ -33,7 +33,8 @@ export default {
     if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 99 batch requests!
-
+    'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292',
+    'https://worldchain-mainnet.g.alchemy.com/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
