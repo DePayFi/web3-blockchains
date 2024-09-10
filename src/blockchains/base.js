@@ -32,10 +32,10 @@ export default {
     if(token) { return `https://basescan.org/token/${token}` }
     if(address) { return `https://basescan.org/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://base.blockpi.network/v1/rpc/public',
-    'https://base.meowrpc.com',
-    'https://mainnet.base.org'
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://mainnet.base.org',
+    'https://base.llamarpc.com',
+    'https://base.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

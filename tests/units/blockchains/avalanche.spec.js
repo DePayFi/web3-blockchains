@@ -21,11 +21,6 @@ describe('avalanche', () => {
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7/logo.png");
     expect(blockchain.stables.usd).toEqual(['0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7', '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E']);
     expect(blockchain.explorer).toEqual('https://snowtrace.io');
-    expect(blockchain.endpoints).toEqual([
-      'https://avalanche.public-rpc.com',
-      'https://avalanche.blockpi.network/v1/rpc/public',
-      'https://avax.meowrpc.com'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://snowtrace.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

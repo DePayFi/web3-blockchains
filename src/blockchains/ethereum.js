@@ -34,8 +34,8 @@ export default {
     if(token) { return `https://etherscan.io/token/${token}` }
     if(address) { return `https://etherscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://rpc.ankr.com/eth',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://eth.rpc.blxrbdn.com',
     'https://eth.llamarpc.com',
     'https://ethereum.publicnode.com'
   ],

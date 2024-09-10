@@ -33,10 +33,10 @@ export default {
     if(token) { return `https://bscscan.com/token/${token}` }
     if(address) { return `https://bscscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://bsc-dataseed.binance.org',
-    'https://bsc-dataseed1.ninicoin.io',
-    'https://bsc-dataseed3.defibit.io'
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://binance.llamarpc.com',
+    'https://bsc-rpc.publicnode.com',
+    'https://endpoints.omniatech.io/v1/bsc/mainnet/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},

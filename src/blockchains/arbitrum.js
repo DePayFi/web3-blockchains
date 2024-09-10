@@ -33,8 +33,8 @@ export default {
     if(token) { return `https://arbiscan.io/token/${token}` }
     if(address) { return `https://arbiscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://arbitrum.blockpi.network/v1/rpc/public',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
     'https://endpoints.omniatech.io/v1/arbitrum/one/public'
   ],

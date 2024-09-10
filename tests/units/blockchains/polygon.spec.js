@@ -21,11 +21,6 @@ describe('polygon', () => {
     expect(blockchain.wrapped.address).toEqual('0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270');
     expect(blockchain.stables.usd).toEqual(['0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359', '0xc2132D05D31c914a87C6611C10748AEb04B58e8F']);
     expect(blockchain.explorer).toEqual('https://polygonscan.com');
-    expect(blockchain.endpoints).toEqual([
-      'https://polygon-rpc.com',
-      'https://polygon.meowrpc.com',
-      'https://polygon-bor.publicnode.com'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://polygonscan.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

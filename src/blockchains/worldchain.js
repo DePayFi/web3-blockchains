@@ -20,11 +20,11 @@ export default {
     logo: ethereum.currency.logo,
   },
   wrapped: {
-    address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    address: '0x4200000000000000000000000000000000000006',
     logo: ethereum.wrapped.logo,
   },
   stables: { // max. 2 per fiat currency
-    usd: []
+    usd: ['0x79A02482A880bCE3F13e09Da970dC34db4CD24d1']
   },
   explorer: 'https://worldchain-mainnet.explorer.alchemy.com',
   explorerUrlFor: ({ transaction, token, address })=>{
@@ -32,13 +32,14 @@ export default {
     if(token) { return `https://worldchain-mainnet.explorer.alchemy.com/token/${token}` }
     if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292',
     'https://worldchain-mainnet.g.alchemy.com/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
-    {"address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
+    {"address": "0x4200000000000000000000000000000000000006", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
+    {"address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1", "symbol": "USDC.e", "name": "Bridged USDC", "decimals": 6, "logo": "", "type": "20"},
   ],
   zero: '0x0000000000000000000000000000000000000000',
   maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',

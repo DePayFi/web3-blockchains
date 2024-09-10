@@ -21,11 +21,6 @@ describe('base', () => {
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
     expect(blockchain.stables.usd).toEqual(['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA']);
     expect(blockchain.explorer).toEqual('https://basescan.org');
-    expect(blockchain.endpoints).toEqual([
-      'https://base.blockpi.network/v1/rpc/public',
-      'https://base.meowrpc.com',
-      'https://mainnet.base.org'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://basescan.org/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

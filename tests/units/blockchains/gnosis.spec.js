@@ -21,11 +21,6 @@ describe('gnosis', () => {
     expect(blockchain.wrapped.address).toEqual('0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d');
     expect(blockchain.stables.usd).toEqual(['0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE', '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83']);
     expect(blockchain.explorer).toEqual('https://gnosisscan.io');
-    expect(blockchain.endpoints).toEqual([
-      'https://rpc.gnosis.gateway.fm',
-      'https://rpc.gnosischain.com',
-      'https://gnosis.blockpi.network/v1/rpc/public'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://gnosisscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

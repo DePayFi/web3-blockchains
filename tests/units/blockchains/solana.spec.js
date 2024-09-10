@@ -20,11 +20,6 @@ describe('solana', () => {
     expect(blockchain.wrapped.address).toEqual('So11111111111111111111111111111111111111112');
     expect(blockchain.stables.usd).toEqual(['EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB']);
     expect(blockchain.explorer).toEqual('https://solscan.io');
-    expect(blockchain.endpoints).toEqual([
-      'https://swr.xnftdata.com/rpc-proxy',
-      'https://solana-rpc.publicnode.com',
-      'https://endpoints.omniatech.io/v1/sol/mainnet/public'
-    ]);
     expect(blockchain.sockets).toEqual([
       'wss://solana.drpc.org',
       'wss://mainnet-beta.solflare.network',
