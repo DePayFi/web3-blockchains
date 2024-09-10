@@ -18,7 +18,7 @@ describe('worldchain', () => {
     expect(blockchain.currency.decimals).toEqual(18);
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
-    expect(blockchain.wrapped.address).toEqual('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2');
+    expect(blockchain.wrapped.address).toEqual('0x4200000000000000000000000000000000000006');
     expect(blockchain.stables.usd).toEqual([]);
     expect(blockchain.explorer).toEqual('https://worldchain-mainnet.explorer.alchemy.com');
     expect(blockchain.explorerUrlFor({
