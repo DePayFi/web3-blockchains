@@ -33,7 +33,7 @@ export default {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://opt-mainnet.g.alchemy.com/v2/demo',
+    'https://endpoints.omniatech.io/v1/op/mainnet/public',
     'https://optimism.llamarpc.com',
     'https://optimism.publicnode.com'
   ],

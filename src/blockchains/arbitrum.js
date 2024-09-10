@@ -34,7 +34,7 @@ export default {
     if(address) { return `https://arbiscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://arb-mainnet.g.alchemy.com/v2/demo',
+    'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
     'https://endpoints.omniatech.io/v1/arbitrum/one/public'
   ],

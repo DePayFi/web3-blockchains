@@ -34,9 +34,9 @@ var bsc = {
     if(address) { return `https://bscscan.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://bsc-dataseed.binance.org',
-    'https://bsc-dataseed1.ninicoin.io',
-    'https://bsc-dataseed3.defibit.io'
+    'https://binance.llamarpc.com',
+    'https://bsc-rpc.publicnode.com',
+    'https://endpoints.omniatech.io/v1/bsc/mainnet/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo$6, "type": "NATIVE"},
@@ -305,7 +305,7 @@ var arbitrum = {
     if(address) { return `https://arbiscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://arb-mainnet.g.alchemy.com/v2/demo',
+    'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
     'https://endpoints.omniatech.io/v1/arbitrum/one/public'
   ],
@@ -459,7 +459,7 @@ var optimism = {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://opt-mainnet.g.alchemy.com/v2/demo',
+    'https://endpoints.omniatech.io/v1/op/mainnet/public',
     'https://optimism.llamarpc.com',
     'https://optimism.publicnode.com'
   ],
