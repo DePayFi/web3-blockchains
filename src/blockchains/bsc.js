@@ -33,7 +33,7 @@ export default {
     if(token) { return `https://bscscan.com/token/${token}` }
     if(address) { return `https://bscscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://bsc-dataseed.binance.org',
     'https://bsc-dataseed1.ninicoin.io',
     'https://bsc-dataseed3.defibit.io'

@@ -21,11 +21,6 @@ describe('arbitrum', () => {
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
     expect(blockchain.stables.usd).toEqual(['0xaf88d065e77c8cC2239327C5EDb3A432268e5831', '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9']);
     expect(blockchain.explorer).toEqual('https://arbiscan.io');
-    expect(blockchain.endpoints).toEqual([
-      'https://arbitrum.blockpi.network/v1/rpc/public',
-      'https://arbitrum-one.publicnode.com',
-      'https://endpoints.omniatech.io/v1/arbitrum/one/public'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://arbiscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

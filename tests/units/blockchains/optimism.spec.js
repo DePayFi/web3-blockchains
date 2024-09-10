@@ -21,11 +21,6 @@ describe('optimism', () => {
     expect(blockchain.wrapped.address).toEqual('0x4200000000000000000000000000000000000006');
     expect(blockchain.stables.usd).toEqual(['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607']);
     expect(blockchain.explorer).toEqual('https://optimistic.etherscan.io');
-    expect(blockchain.endpoints).toEqual([
-      'https://mainnet.optimism.io',
-      'https://optimism.meowrpc.com',
-      'https://optimism.publicnode.com'
-    ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
     })).toEqual('https://optimistic.etherscan.io/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')

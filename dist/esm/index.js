@@ -33,7 +33,7 @@ var bsc = {
     if(token) { return `https://bscscan.com/token/${token}` }
     if(address) { return `https://bscscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://bsc-dataseed.binance.org',
     'https://bsc-dataseed1.ninicoin.io',
     'https://bsc-dataseed3.defibit.io'
@@ -89,8 +89,8 @@ var ethereum = {
     if(token) { return `https://etherscan.io/token/${token}` }
     if(address) { return `https://etherscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://rpc.ankr.com/eth',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://eth.rpc.blxrbdn.com',
     'https://eth.llamarpc.com',
     'https://ethereum.publicnode.com'
   ],
@@ -145,8 +145,8 @@ var fantom = {
     if(token) { return `https://ftmscan.com/token/${token}` }
     if(address) { return `https://ftmscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://rpc.ftm.tools',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://endpoints.omniatech.io/v1/fantom/mainnet/public',
     'https://fantom.publicnode.com',
     'https://rpc2.fantom.network'
   ],
@@ -195,9 +195,9 @@ var polygon = {
     if(token) { return `https://polygonscan.com/token/${token}` }
     if(address) { return `https://polygonscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://polygon-rpc.com',
-    'https://polygon.meowrpc.com',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://polygon.rpc.blxrbdn.com',
+    'https://polygon.llamarpc.com',
     'https://polygon-bor.publicnode.com'
   ],
   tokens: [ // only major tokens
@@ -304,8 +304,8 @@ var arbitrum = {
     if(token) { return `https://arbiscan.io/token/${token}` }
     if(address) { return `https://arbiscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://arbitrum.blockpi.network/v1/rpc/public',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://arb-mainnet.g.alchemy.com/v2/demo',
     'https://arbitrum-one.publicnode.com',
     'https://endpoints.omniatech.io/v1/arbitrum/one/public'
   ],
@@ -357,10 +357,9 @@ var avalanche = {
     if(token) { return `https://snowtrace.io/token/${token}` }
     if(address) { return `https://snowtrace.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://avalanche.public-rpc.com',
-    'https://avalanche.blockpi.network/v1/rpc/public',
-    'https://avax.meowrpc.com'
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://avalanche-c-chain-rpc.publicnode.com',
+    'https://endpoints.omniatech.io/v1/avax/mainnet/public',
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "AVAX", "name": "Avalanche", "decimals": 18, "logo": currencyLogo$1, "type": "NATIVE"},
@@ -409,10 +408,10 @@ var gnosis = {
     if(token) { return `https://gnosisscan.io/token/${token}` }
     if(address) { return `https://gnosisscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://rpc.gnosis.gateway.fm',
     'https://rpc.gnosischain.com',
-    'https://gnosis.blockpi.network/v1/rpc/public'
+    'https://gnosis-rpc.publicnode.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "xDAI", "name": "xDAI", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},
@@ -459,9 +458,9 @@ var optimism = {
     if(token) { return `https://optimistic.etherscan.io/token/${token}` }
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://mainnet.optimism.io',
-    'https://optimism.meowrpc.com',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://opt-mainnet.g.alchemy.com/v2/demo',
+    'https://optimism.llamarpc.com',
     'https://optimism.publicnode.com'
   ],
   tokens: [ // only major tokens
@@ -509,10 +508,10 @@ var base = {
     if(token) { return `https://basescan.org/token/${token}` }
     if(address) { return `https://basescan.org/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://base.blockpi.network/v1/rpc/public',
-    'https://base.meowrpc.com',
-    'https://mainnet.base.org'
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://mainnet.base.org',
+    'https://base.llamarpc.com',
+    'https://base.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

@@ -32,8 +32,8 @@ export default {
     if(token) { return `https://ftmscan.com/token/${token}` }
     if(address) { return `https://ftmscan.com/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://rpc.ftm.tools',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://endpoints.omniatech.io/v1/fantom/mainnet/public',
     'https://fantom.publicnode.com',
     'https://rpc2.fantom.network'
   ],

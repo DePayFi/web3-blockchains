@@ -32,9 +32,9 @@ export default {
     if(token) { return `https://optimistic.etherscan.io/token/${token}` }
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
-    'https://mainnet.optimism.io',
-    'https://optimism.meowrpc.com',
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
+    'https://opt-mainnet.g.alchemy.com/v2/demo',
+    'https://optimism.llamarpc.com',
     'https://optimism.publicnode.com'
   ],
   tokens: [ // only major tokens

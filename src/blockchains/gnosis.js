@@ -32,10 +32,10 @@ export default {
     if(token) { return `https://gnosisscan.io/token/${token}` }
     if(address) { return `https://gnosisscan.io/address/${address}` }
   },
-  endpoints: [ // make sure provider supports batch size of 99 batch requests!
+  endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://rpc.gnosis.gateway.fm',
     'https://rpc.gnosischain.com',
-    'https://gnosis.blockpi.network/v1/rpc/public'
+    'https://gnosis-rpc.publicnode.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "xDAI", "name": "xDAI", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},
