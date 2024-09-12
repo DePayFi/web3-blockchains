@@ -8,6 +8,7 @@ import avalanche from './blockchains/avalanche'
 import gnosis from './blockchains/gnosis'
 import optimism from './blockchains/optimism'
 import base from './blockchains/base'
+import worldchain from './blockchains/worldchain'
 
 const all = [
   ethereum,
@@ -20,6 +21,7 @@ const all = [
   gnosis,
   optimism,
   base,
+  worldchain,
 ]
 
 const findById = function (id) {
@@ -59,6 +61,7 @@ export default {
   gnosis,
   optimism,
   base,
+  worldchain,
   
   all,
   findById,
