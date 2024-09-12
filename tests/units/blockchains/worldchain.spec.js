@@ -5,8 +5,8 @@ describe('worldchain', () => {
   it('provides basic structured data', () => {
     let blockchain = Blockchains.findByName('worldchain');
     expect(blockchain.name).toEqual('worldchain');
-    expect(blockchain.id).toEqual('0x1e0');
-    expect(blockchain.networkId).toEqual('480');
+    expect(blockchain.id).toEqual('0xa');
+    expect(blockchain.networkId).toEqual('10');
     expect(blockchain.namespace).toEqual('eip155');
     expect(blockchain.label).toEqual('World Chain');
     expect(blockchain.fullName).toEqual('World Chain Mainnet');

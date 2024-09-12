@@ -529,8 +529,10 @@ const logo = 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzMgMzIiIGZpbGw9
 
 var worldchain = {
   name: 'worldchain',
-  id: '0x1e0',
-  networkId: '480',
+  // id: '0x1e0',
+  // networkId: '480',
+  id: '0xa',
+  networkId: '10',
   namespace: 'eip155',
   platform: 'evm',
   label: 'World Chain',

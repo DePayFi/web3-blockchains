@@ -3,8 +3,10 @@ import ethereum from './ethereum'
 
 export default {
   name: 'worldchain',
-  id: '0x1e0',
-  networkId: '480',
+  // id: '0x1e0',
+  // networkId: '480',
+  id: '0xa',
+  networkId: '10',
   namespace: 'eip155',
   platform: 'evm',
   label: 'World Chain',
