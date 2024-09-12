@@ -3,10 +3,8 @@ import ethereum from './ethereum'
 
 export default {
   name: 'worldchain',
-  // id: '0x1e0',
-  // networkId: '480',
-  id: '0xa',
-  networkId: '10',
+  id: '0x1e0',
+  networkId: '480',
   namespace: 'eip155',
   platform: 'evm',
   label: 'World Chain',
@@ -25,47 +23,24 @@ export default {
     address: '0x4200000000000000000000000000000000000006',
     logo: ethereum.wrapped.logo,
   },
-  // stables: { // max. 2 per fiat currency
-  //   usd: ['0x79A02482A880bCE3F13e09Da970dC34db4CD24d1']
-  // },
-  // explorer: 'https://worldchain-mainnet.explorer.alchemy.com',
-  // explorerUrlFor: ({ transaction, token, address })=>{
-  //   if(transaction) { return `https://worldchain-mainnet.explorer.alchemy.com/tx/${transaction.id || transaction}` }
-  //   if(token) { return `https://worldchain-mainnet.explorer.alchemy.com/token/${token}` }
-  //   if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
-  // },
   stables: { // max. 2 per fiat currency
-    usd: ['0x94b008aA00579c1307B0EF2c499aD98a8ce58e58', '0x7F5c764cBc14f9669B88837ca1490cCa17c31607']
+    usd: ['0x79A02482A880bCE3F13e09Da970dC34db4CD24d1']
   },
-  explorer: 'https://optimistic.etherscan.io',
+  explorer: 'https://worldchain-mainnet.explorer.alchemy.com',
   explorerUrlFor: ({ transaction, token, address })=>{
-    if(transaction) { return `https://optimistic.etherscan.io/tx/${transaction.id || transaction}` }
-    if(token) { return `https://optimistic.etherscan.io/token/${token}` }
-    if(address) { return `https://optimistic.etherscan.io/address/${address}` }
+    if(transaction) { return `https://worldchain-mainnet.explorer.alchemy.com/tx/${transaction.id || transaction}` }
+    if(token) { return `https://worldchain-mainnet.explorer.alchemy.com/token/${token}` }
+    if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://endpoints.omniatech.io/v1/op/mainnet/public',
-    'https://optimism.llamarpc.com',
-    'https://optimism.publicnode.com'
+    'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292',
+    'https://worldchain-mainnet.g.alchemy.com/public'
   ],
-  // endpoints: [ // make sure provider supports batch size of 50 batch requests!
-  //   'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292',
-  //   'https://worldchain-mainnet.g.alchemy.com/public'
-  // ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
     {"address": "0x4200000000000000000000000000000000000006", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
-    {"address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58", "symbol": "USDT", "name": "Tether", "decimals": 6, "logo": 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/assets/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58/logo.png', "type": "20"},
-    {"address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607", "symbol": "USDC", "name": "USD Coin", "decimals": 6, "logo": 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/assets/0x7F5c764cBc14f9669B88837ca1490cCa17c31607/logo.png', "type": "20"},
-    {"address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1", "symbol": "DAI", "name": "Dai Stablecoin", "decimals": 18, "logo": 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png', "type": "20"},
-    {"address": "0x4200000000000000000000000000000000000042", "symbol": "OP", "name": "Optimism", "decimals": 18, "logo": 'https://user-images.githubusercontent.com/1300064/219575413-d7990d69-1d21-44ef-a2b1-e9c682c79802.svg', "type": "20"},
+    {"address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1", "symbol": "USDC.e", "name": "Bridged USDC", "decimals": 6, "logo": "", "type": "20"}
   ],
-  // tokens: [ // only major tokens
-  //   {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
-  //   {"address": "0x4200000000000000000000000000000000000006", "symbol": "WETH", "name": "Wrapped Ether", "decimals": 18, "logo": ethereum.wrapped.logo, "type": "20"},
-  //   {"address": "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1", "symbol": "USDC.e", "name": "Bridged USDC", "decimals": 6, "logo": "", "type": "20"},
-  //   {"address": "", "symbol": "WLD", "name": "Bridged USDC", "decimals": 6, "logo": "", "type": "20"},
-  // ],
   zero: '0x0000000000000000000000000000000000000000',
   maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
   permit2: '0x000000000022D473030F116dDEE9F6B43aC78BA3'
