@@ -33,7 +33,7 @@ export default {
     if(address) { return `https://basescan.org/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://mainnet.base.org',
+    'https://base-rpc.publicnode.com',
     'https://base.llamarpc.com',
     'https://base.rpc.subquery.network/public'
   ],
