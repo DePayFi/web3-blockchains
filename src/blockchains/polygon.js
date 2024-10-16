@@ -33,7 +33,7 @@ export default {
     if(address) { return `https://polygonscan.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://polygon.rpc.blxrbdn.com',
+    'https://polygon-bor-rpc.publicnode.com',
     'https://polygon.llamarpc.com',
     'https://polygon-bor.publicnode.com'
   ],
