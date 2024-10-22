@@ -5,7 +5,7 @@
 }(this, (function () { 'use strict';
 
   const logo$a = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0yOTkuMyAyMzcuNSA1MDAgMTIybDIwMC43IDExNS41LTczLjUgNDIuNkw1MDAgMjA4LjJsLTEyNy4xIDcxLjktNzMuNi00Mi42em00MDEuNCAxNDYtNzMuNS00Mi42LTEyNy4xIDczTDM3MyAzNDAuNGwtNzMuNSA0My4xdjg1LjdsMTI3LjEgNzN2MTQ1LjRsNzMuNSA0My4xIDczLjUtNDMuMVY1NDIuMWwxMjcuMS03M3YtODUuNnptMCAyMzIuMXYtODUuN2wtNzMuNSA0Mi42djg1LjdjLS4xLS42IDczLjUtNDIuNiA3My41LTQyLjZ6bTUxLjkgMjkuMy0xMjcuMSA3M3Y4NS43TDgyNi4xIDY4OFY0NTYuNGwtNzMuNSA0My4xdjE0NS40em0tNzMuNS0zMzQuNCA3My41IDQzLjF2ODUuN2w3My41LTQzLjF2LTg1LjdsLTczLjUtNDMuMS03My41IDQzLjF6TTQyNi41IDc0OS40djg1LjdsNzMuNSA0My4xIDczLjUtNDMuMXYtODUuN2wtNzMuNSA0Mi03My41LTQyek0yOTkuMyA2MTUuNmw3My41IDQzLjF2LTg2LjJMMjk5LjMgNTMwdjg1LjZ6bTEyNy4yLTMwNS4xIDczLjUgNDMuMSA3My41LTQzLjEtNzMuNS00Mi42YzAtLjUtNzMuNSA0Mi42LTczLjUgNDIuNnptLTE3OS4xIDQzLjEgNzMuNS00My4xLTczLjUtNDMuMS03My41IDQzLjF2ODUuN2w3My41IDQzLjF2LTg1Ljd6bTAgMTQ1LjQtNzMuNS00Mi42VjY4OGwyMDAuNyAxMTUuNXYtODUuN2wtMTI3LjEtNzNjLS4xLjEtLjEtMTQ1LjgtLjEtMTQ1Ljh6IiBmaWxsPSIjZjBiOTBiIi8+PC9zdmc+';
-  const currencyLogo$6 = "https://app.uniswap.org/static/media/bnb-logo.797868eb94521320b78e3967134febbe.svg";
+  const currencyLogo$6 = "https://assets.trustwalletapp.com/blockchains/smartchain/info/logo.png";
   const wrappedLogo$5 = "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png";
 
   var bsc = {
@@ -120,8 +120,9 @@
   };
 
   const logo$8 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik00NjcgMTM1LjVjMTgtOS4zIDQ1LjEtOS4zIDYzIDBsMTgzLjQgOTdjMTAuNyA2LjEgMTYuNiAxNCAxOCAyMy4zdjQ4Ni42YzAgOS4zLTYuMSAxOS4yLTE4IDI1LjJsLTE4My4yIDk3Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTgzLjMtOTdjLTExLjktNi4xLTE3LjItMTUuOS0xOC0yNS4yVjI1NS43Yy43LTguNyA2LjctMTcuMiAxNy4yLTIzLjNMNDY3IDEzNS41em0yMzUuOCAzODkuNy0xNzIuNiA5MC45Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTcxLjktOTAuM3YyMTQuNGwxNzEuOSA5MC4zYzEwIDUuMyAyMC42IDEwLjcgMzEuMiAxMS4zaC43YzEwIDAgMjAtNS4zIDMwLjUtMTBsMTc0LTkyLjMtLjgtMjE0LjN6TTIzNy4zIDczMS4xYzAgMTguNiAyIDMxLjIgNi43IDM5LjggMy4zIDcuMyA4LjcgMTIuNiAxOC42IDE5LjJsLjcuN2MyIDEuNCA0LjcgMi42IDcuMyA0LjdsMy4zIDIgMTAuNyA2LjEtMTQuNiAyNC42LTExLjMtNy4zLTItMS40Yy0zLjMtMi02LjEtNC04LjctNS4zLTI3LjktMTguNi0zNy44LTM5LjItMzcuOC04MS42di0xLjRoMjcuMXpNNDg1IDM5Ni40Yy0xLjQuNy0yLjYuNy00IDEuNGwtMTgzLjIgOTYuOWgtLjcuN2wxODMuMyA5N2MxLjQuNyAyLjYgMS40IDQgMS40bC0uMS0xOTYuN3ptMjkuMyAwdjE5Ny44YzEuNC0uNyAyLjYtLjcgNC0xLjRsMTgzLjMtOTdoLjctLjdsLTE4My4zLTk4LjJjLTEuNC0uNS0yLjgtMS4yLTQtMS4yem0xODguNS0xMDctMTY0LjcgODYuMyAxNjQuNyA4Ni40VjI4OS40em0tNDA3LjcgMHYxNzMuM2wxNjQuNy04Ni4zLTE2NC43LTg3em0yMjIuNS0xMjhjLTkuMy01LjMtMjYuNS01LjMtMzYuNiAwbC0xODMuMiA5N2gtLjcuN2wxODMuMyA5N2M5LjMgNS4zIDI2LjUgNS4zIDM2LjYgMGwxODMuMy05N2guNy0uN2wtMTgzLjQtOTd6bTIxMi41IDkuMyAxMS4zIDcuMyAyIDEuNGMzLjMgMiA2LjEgNCA4LjcgNS4zIDI3LjkgMTguNiAzNy44IDM5LjIgMzcuOCA4MS42djEuNGgtMjguN2MwLTE4LjYtMi0zMS4yLTYuNy0zOS44LTMuMy03LjMtOC43LTEyLjYtMTguNi0xOS4ybC0uNy0uN2MtMi0xLjQtNC43LTIuNi03LjMtNC43bC0zLjMtMi0xMC43LTYuMSAxNi4yLTI0LjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+';
-  const currencyLogo$4 = "https://assets.spooky.fi/tokens/FTM.png";
-  const wrappedLogo$3 = "https://assets.spooky.fi/tokens/wFTM.png";
+  const currencyLogo$4 = "https://assets.trustwalletapp.com/blockchains/fantom/info/logo.png";
+  const wrappedLogo$3 = "https://assets.trustwalletapp.com/blockchains/fantom/assets/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo.png";
+
 
   var fantom = {
     name: 'fantom',
@@ -161,8 +162,8 @@
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "FTM", "name": "Fantom", "decimals": 18, "logo": currencyLogo$4, "type": "NATIVE"},
       {"address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83", "symbol": "WFTM", "name": "Wrapped Fantom", "decimals": 18, "logo": wrappedLogo$3, "type": "20"},
-      {"address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
-      {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
+      {"address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://ftmscan.com/token/images/axlusdc_32.png", "type": "20"},
+      {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://ftmscan.com/token/images/axlusdc_32.png", "type": "20"},
     ],
     zero: '0x0000000000000000000000000000000000000000',
     maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',

@@ -12,12 +12,12 @@ describe('fantom', () => {
     expect(blockchain.fullName).toEqual('Fantom Opera');
     expect(blockchain.logo != undefined).toEqual(true);
     expect(blockchain.logoBackgroundColor).toEqual('#226efb');
-    expect(blockchain.currency.logo).toEqual("https://assets.spooky.fi/tokens/FTM.png");
+    expect(blockchain.currency.logo).toEqual("https://assets.trustwalletapp.com/blockchains/fantom/info/logo.png");
     expect(blockchain.currency.name).toEqual('Fantom');
     expect(blockchain.currency.symbol).toEqual('FTM');
     expect(blockchain.currency.decimals).toEqual(18);
     expect(blockchain.currency.address).toEqual('0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE');
-    expect(blockchain.wrapped.logo).toEqual("https://assets.spooky.fi/tokens/wFTM.png");
+    expect(blockchain.wrapped.logo).toEqual("https://assets.trustwalletapp.com/blockchains/fantom/assets/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo.png");
     expect(blockchain.wrapped.address).toEqual('0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83');
     expect(blockchain.stables.usd).toEqual(['0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf', '0x1B6382DBDEa11d97f24495C9A90b7c88469134a4']);
     expect(blockchain.explorer).toEqual('https://ftmscan.com');

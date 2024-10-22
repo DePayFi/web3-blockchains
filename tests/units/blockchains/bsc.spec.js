@@ -12,7 +12,7 @@ describe('bsc', () => {
     expect(blockchain.fullName).toEqual('BNB Smart Chain Mainnet');
     expect(blockchain.logo != undefined).toEqual(true);
     expect(blockchain.logoBackgroundColor).toEqual('#000000');
-    expect(blockchain.currency.logo).toEqual("https://app.uniswap.org/static/media/bnb-logo.797868eb94521320b78e3967134febbe.svg");
+    expect(blockchain.currency.logo).toEqual("https://assets.trustwalletapp.com/blockchains/smartchain/info/logo.png");
     expect(blockchain.currency.name).toEqual('BNB');
     expect(blockchain.currency.symbol).toEqual('BNB');
     expect(blockchain.currency.decimals).toEqual(18);

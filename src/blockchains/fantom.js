@@ -1,6 +1,7 @@
 const logo = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik00NjcgMTM1LjVjMTgtOS4zIDQ1LjEtOS4zIDYzIDBsMTgzLjQgOTdjMTAuNyA2LjEgMTYuNiAxNCAxOCAyMy4zdjQ4Ni42YzAgOS4zLTYuMSAxOS4yLTE4IDI1LjJsLTE4My4yIDk3Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTgzLjMtOTdjLTExLjktNi4xLTE3LjItMTUuOS0xOC0yNS4yVjI1NS43Yy43LTguNyA2LjctMTcuMiAxNy4yLTIzLjNMNDY3IDEzNS41em0yMzUuOCAzODkuNy0xNzIuNiA5MC45Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTcxLjktOTAuM3YyMTQuNGwxNzEuOSA5MC4zYzEwIDUuMyAyMC42IDEwLjcgMzEuMiAxMS4zaC43YzEwIDAgMjAtNS4zIDMwLjUtMTBsMTc0LTkyLjMtLjgtMjE0LjN6TTIzNy4zIDczMS4xYzAgMTguNiAyIDMxLjIgNi43IDM5LjggMy4zIDcuMyA4LjcgMTIuNiAxOC42IDE5LjJsLjcuN2MyIDEuNCA0LjcgMi42IDcuMyA0LjdsMy4zIDIgMTAuNyA2LjEtMTQuNiAyNC42LTExLjMtNy4zLTItMS40Yy0zLjMtMi02LjEtNC04LjctNS4zLTI3LjktMTguNi0zNy44LTM5LjItMzcuOC04MS42di0xLjRoMjcuMXpNNDg1IDM5Ni40Yy0xLjQuNy0yLjYuNy00IDEuNGwtMTgzLjIgOTYuOWgtLjcuN2wxODMuMyA5N2MxLjQuNyAyLjYgMS40IDQgMS40bC0uMS0xOTYuN3ptMjkuMyAwdjE5Ny44YzEuNC0uNyAyLjYtLjcgNC0xLjRsMTgzLjMtOTdoLjctLjdsLTE4My4zLTk4LjJjLTEuNC0uNS0yLjgtMS4yLTQtMS4yem0xODguNS0xMDctMTY0LjcgODYuMyAxNjQuNyA4Ni40VjI4OS40em0tNDA3LjcgMHYxNzMuM2wxNjQuNy04Ni4zLTE2NC43LTg3em0yMjIuNS0xMjhjLTkuMy01LjMtMjYuNS01LjMtMzYuNiAwbC0xODMuMiA5N2gtLjcuN2wxODMuMyA5N2M5LjMgNS4zIDI2LjUgNS4zIDM2LjYgMGwxODMuMy05N2guNy0uN2wtMTgzLjQtOTd6bTIxMi41IDkuMyAxMS4zIDcuMyAyIDEuNGMzLjMgMiA2LjEgNCA4LjcgNS4zIDI3LjkgMTguNiAzNy44IDM5LjIgMzcuOCA4MS42djEuNGgtMjguN2MwLTE4LjYtMi0zMS4yLTYuNy0zOS44LTMuMy03LjMtOC43LTEyLjYtMTguNi0xOS4ybC0uNy0uN2MtMi0xLjQtNC43LTIuNi03LjMtNC43bC0zLjMtMi0xMC43LTYuMSAxNi4yLTI0LjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+'
-const currencyLogo = "https://assets.spooky.fi/tokens/FTM.png"
-const wrappedLogo = "https://assets.spooky.fi/tokens/wFTM.png"
+const currencyLogo = "https://assets.trustwalletapp.com/blockchains/fantom/info/logo.png"
+const wrappedLogo = "https://assets.trustwalletapp.com/blockchains/fantom/assets/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo.png"
+
 
 export default {
   name: 'fantom',
@@ -40,8 +41,8 @@ export default {
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "FTM", "name": "Fantom", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},
     {"address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83", "symbol": "WFTM", "name": "Wrapped Fantom", "decimals": 18, "logo": wrappedLogo, "type": "20"},
-    {"address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
-    {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://assets.spooky.fi/tokens/USDC.png", "type": "20"},
+    {"address": "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf", "symbol": "lzUSDC", "name": "LayerZero USDC", "decimals": 6, "logo": "https://ftmscan.com/token/images/axlusdc_32.png", "type": "20"},
+    {"address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4", "symbol": "axlUSDC", "name": "Axelar Wrapped USDC", "decimals": 6, "logo": "https://ftmscan.com/token/images/axlusdc_32.png", "type": "20"},
   ],
   zero: '0x0000000000000000000000000000000000000000',
   maxInt: '115792089237316195423570985008687907853269984665640564039457584007913129639935',
