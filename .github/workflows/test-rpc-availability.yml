@@ -1,6 +1,9 @@
 name: Test RPC Availability
 
 on:
+  push:
+    branches:
+      - '*'  # Matches all branches
   schedule:
     # Runs at 05:00 UTC every day
     - cron: '0 5 * * *'
