@@ -35,9 +35,9 @@ export default {
     if(address) { return `https://etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://eth.rpc.blxrbdn.com',
     'https://eth.llamarpc.com',
-    'https://ethereum.publicnode.com'
+    'https://ethereum.publicnode.com',
+    'https://ethereum.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},

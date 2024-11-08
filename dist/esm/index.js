@@ -91,9 +91,9 @@ var ethereum = {
     if(address) { return `https://etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://eth.rpc.blxrbdn.com',
     'https://eth.llamarpc.com',
-    'https://ethereum.publicnode.com'
+    'https://ethereum.publicnode.com',
+    'https://ethereum.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": currencyLogo$5, "type": "NATIVE"},
@@ -366,7 +366,8 @@ var avalanche = {
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://avalanche-c-chain-rpc.publicnode.com',
-    'https://endpoints.omniatech.io/v1/avax/mainnet/public'
+    'https://avalanche-c-chain.publicnode.com',
+    'https://avalanche-api.flare.network/ext/bc/C/rpc',
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "AVAX", "name": "Avalanche", "decimals": 18, "logo": currencyLogo$1, "type": "NATIVE"},
@@ -572,8 +573,7 @@ var worldchain = {
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://worldchain-mainnet.g.alchemy.com/public',
-    'https://480.rpc.thirdweb.com',
-    'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292'
+    'https://480.rpc.thirdweb.com'
   ],
   tokens: [ // only major tokens
     {"address": "0x2cFc85d8E48F8EAB294be644d9E25C3030863003", "symbol": "WLD", "name": "Worldcoin", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/assets/0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1/logo.png", "type": "20"},
