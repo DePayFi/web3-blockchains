@@ -10,6 +10,8 @@ describe('test RPC availability', () => {
         
         it(`${endpoint} works with up to 50 subrequests`, async()=>{
 
+          await new Promise(resolve => setTimeout(resolve, 1000))
+
           let response = await fetch(endpoint, {
             method: 'POST',
             headers: {
