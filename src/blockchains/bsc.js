@@ -36,7 +36,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://binance.llamarpc.com',
     'https://bsc-rpc.publicnode.com',
-    'https://bnb.rpc.subquery.network/public'
+    'https://bsc.rpc.blxrbdn.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},

@@ -35,7 +35,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://optimism.llamarpc.com',
     'https://optimism.publicnode.com',
-    'https://optimism.rpc.subquery.network/public'
+    'https://optimism.rpc.thirdweb.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

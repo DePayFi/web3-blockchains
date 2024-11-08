@@ -42,7 +42,7 @@
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://binance.llamarpc.com',
       'https://bsc-rpc.publicnode.com',
-      'https://bnb.rpc.subquery.network/public'
+      'https://bsc.rpc.blxrbdn.com'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo$6, "type": "NATIVE"},
@@ -99,7 +99,7 @@
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://eth.llamarpc.com',
       'https://ethereum.publicnode.com',
-      'https://ethereum.rpc.subquery.network/public'
+      'https://eth.rpc.blxrbdn.com'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": currencyLogo$5, "type": "NATIVE"},
@@ -319,7 +319,7 @@
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://arbitrum.llamarpc.com',
       'https://arbitrum-one.publicnode.com',
-      'https://arbitrum.rpc.subquery.network/public'
+      'https://arbitrum.rpc.thirdweb.com'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
@@ -477,7 +477,7 @@
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://optimism.llamarpc.com',
       'https://optimism.publicnode.com',
-      'https://optimism.rpc.subquery.network/public'
+      'https://optimism.rpc.thirdweb.com'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
@@ -528,7 +528,7 @@
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://base-rpc.publicnode.com',
       'https://base.llamarpc.com',
-      'https://base.rpc.subquery.network/public'
+      'https://base.rpc.thirdweb.com'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

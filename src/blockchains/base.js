@@ -35,7 +35,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://base-rpc.publicnode.com',
     'https://base.llamarpc.com',
-    'https://base.rpc.subquery.network/public'
+    'https://base.rpc.thirdweb.com'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
