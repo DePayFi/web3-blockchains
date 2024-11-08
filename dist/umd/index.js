@@ -259,9 +259,9 @@
       if(address) { return `https://solscan.io/address/${address}` }
     },
     endpoints: [
-      'https://swr.xnftdata.com/rpc-proxy',
+      'https://solana-mainnet.g.alchemy.com/v2/demo',
       'https://solana-rpc.publicnode.com',
-      'https://endpoints.omniatech.io/v1/sol/mainnet/public'
+      'https://endpoints.omniatech.io/v1/sol/mainnet/public',
     ],
     sockets: [
       'wss://solana.drpc.org',
