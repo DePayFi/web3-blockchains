@@ -36,7 +36,7 @@ var bsc = {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://binance.llamarpc.com',
     'https://bsc-rpc.publicnode.com',
-    'https://endpoints.omniatech.io/v1/bsc/mainnet/public'
+    'https://bnb.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo$6, "type": "NATIVE"},
@@ -149,7 +149,7 @@ var fantom = {
     if(address) { return `https://ftmscan.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://endpoints.omniatech.io/v1/fantom/mainnet/public',
+    'https://rpc.fantom.network',
     'https://fantom.publicnode.com',
     'https://rpc2.fantom.network'
   ],
@@ -313,7 +313,7 @@ var arbitrum = {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
-    'https://endpoints.omniatech.io/v1/arbitrum/one/public'
+    'https://arbitrum.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
@@ -366,7 +366,7 @@ var avalanche = {
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://avalanche-c-chain-rpc.publicnode.com',
-    'https://endpoints.omniatech.io/v1/avax/mainnet/public',
+    'https://endpoints.omniatech.io/v1/avax/mainnet/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "AVAX", "name": "Avalanche", "decimals": 18, "logo": currencyLogo$1, "type": "NATIVE"},
@@ -468,9 +468,9 @@ var optimism = {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://endpoints.omniatech.io/v1/op/mainnet/public',
     'https://optimism.llamarpc.com',
-    'https://optimism.publicnode.com'
+    'https://optimism.publicnode.com',
+    'https://optimism.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
@@ -571,8 +571,9 @@ var worldchain = {
     if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292',
-    'https://worldchain-mainnet.g.alchemy.com/public'
+    'https://worldchain-mainnet.g.alchemy.com/public',
+    'https://480.rpc.thirdweb.com',
+    'https://worldchain-mainnet.blastapi.io/1b1a6314-79bf-4afe-b48b-c943fca35292'
   ],
   tokens: [ // only major tokens
     {"address": "0x2cFc85d8E48F8EAB294be644d9E25C3030863003", "symbol": "WLD", "name": "Worldcoin", "decimals": 18, "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/assets/0xdC6fF44d5d932Cbd77B52E5612Ba0529DC6226F1/logo.png", "type": "20"},

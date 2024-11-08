@@ -36,7 +36,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
-    'https://endpoints.omniatech.io/v1/arbitrum/one/public'
+    'https://arbitrum.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

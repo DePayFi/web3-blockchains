@@ -36,7 +36,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://binance.llamarpc.com',
     'https://bsc-rpc.publicnode.com',
-    'https://endpoints.omniatech.io/v1/bsc/mainnet/public'
+    'https://bnb.rpc.subquery.network/public'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},
