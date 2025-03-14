@@ -22,8 +22,8 @@ describe('solana', () => {
     expect(blockchain.explorer).toEqual('https://solscan.io');
     expect(blockchain.sockets).toEqual([
       'wss://solana.drpc.org',
-      'wss://mainnet-beta.solflare.network',
-      'wss://solana-rpc.publicnode.com'
+      'wss://solana-rpc.publicnode.com',
+      'wss://api.mainnet-beta.solana.com'
     ]);
     expect(blockchain.explorerUrlFor({
       transaction: { id: '3Hk7wbH6aEoiW5NA9d4HFBNDnPqFB8aeAnNpJhHg9VJ4g9aqQZfcX5gj2orN4wksY8kRkToD2viZiiRrXjnt78BC' }
