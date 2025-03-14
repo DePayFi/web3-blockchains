@@ -2,7 +2,6 @@ const logo = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
 const currencyLogo = "https://assets.trustwalletapp.com/blockchains/fantom/info/logo.png"
 const wrappedLogo = "https://assets.trustwalletapp.com/blockchains/fantom/assets/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo.png"
 
-
 export default {
   name: 'fantom',
   id: '0xfa',

@@ -34,7 +34,7 @@ export default {
     if(address) { return `https://bscscan.com/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://binance.llamarpc.com',
+    'https://bsc.blockrazor.xyz',
     'https://bsc-rpc.publicnode.com',
     'https://bsc.rpc.blxrbdn.com'
   ],

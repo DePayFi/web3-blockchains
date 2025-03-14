@@ -34,9 +34,9 @@ export default {
     if(address) { return `https://arbiscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://arbitrum.llamarpc.com',
     'https://arbitrum-one.publicnode.com',
-    'https://arbitrum.rpc.thirdweb.com'
+    'https://arbitrum.rpc.thirdweb.com',
+    'https://arb1.arbitrum.io/rpc'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},

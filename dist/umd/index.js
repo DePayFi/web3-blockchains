@@ -40,7 +40,7 @@
       if(address) { return `https://bscscan.com/address/${address}` }
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
-      'https://binance.llamarpc.com',
+      'https://bsc.blockrazor.xyz',
       'https://bsc-rpc.publicnode.com',
       'https://bsc.rpc.blxrbdn.com'
     ],
@@ -97,7 +97,7 @@
       if(address) { return `https://etherscan.io/address/${address}` }
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
-      'https://eth.llamarpc.com',
+      'https://eth1.lava.build',
       'https://ethereum.publicnode.com',
       'https://eth.rpc.blxrbdn.com'
     ],
@@ -122,7 +122,6 @@
   const logo$8 = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik00NjcgMTM1LjVjMTgtOS4zIDQ1LjEtOS4zIDYzIDBsMTgzLjQgOTdjMTAuNyA2LjEgMTYuNiAxNCAxOCAyMy4zdjQ4Ni42YzAgOS4zLTYuMSAxOS4yLTE4IDI1LjJsLTE4My4yIDk3Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTgzLjMtOTdjLTExLjktNi4xLTE3LjItMTUuOS0xOC0yNS4yVjI1NS43Yy43LTguNyA2LjctMTcuMiAxNy4yLTIzLjNMNDY3IDEzNS41em0yMzUuOCAzODkuNy0xNzIuNiA5MC45Yy0xOCA5LjMtNDUuMSA5LjMtNjMgMGwtMTcxLjktOTAuM3YyMTQuNGwxNzEuOSA5MC4zYzEwIDUuMyAyMC42IDEwLjcgMzEuMiAxMS4zaC43YzEwIDAgMjAtNS4zIDMwLjUtMTBsMTc0LTkyLjMtLjgtMjE0LjN6TTIzNy4zIDczMS4xYzAgMTguNiAyIDMxLjIgNi43IDM5LjggMy4zIDcuMyA4LjcgMTIuNiAxOC42IDE5LjJsLjcuN2MyIDEuNCA0LjcgMi42IDcuMyA0LjdsMy4zIDIgMTAuNyA2LjEtMTQuNiAyNC42LTExLjMtNy4zLTItMS40Yy0zLjMtMi02LjEtNC04LjctNS4zLTI3LjktMTguNi0zNy44LTM5LjItMzcuOC04MS42di0xLjRoMjcuMXpNNDg1IDM5Ni40Yy0xLjQuNy0yLjYuNy00IDEuNGwtMTgzLjIgOTYuOWgtLjcuN2wxODMuMyA5N2MxLjQuNyAyLjYgMS40IDQgMS40bC0uMS0xOTYuN3ptMjkuMyAwdjE5Ny44YzEuNC0uNyAyLjYtLjcgNC0xLjRsMTgzLjMtOTdoLjctLjdsLTE4My4zLTk4LjJjLTEuNC0uNS0yLjgtMS4yLTQtMS4yem0xODguNS0xMDctMTY0LjcgODYuMyAxNjQuNyA4Ni40VjI4OS40em0tNDA3LjcgMHYxNzMuM2wxNjQuNy04Ni4zLTE2NC43LTg3em0yMjIuNS0xMjhjLTkuMy01LjMtMjYuNS01LjMtMzYuNiAwbC0xODMuMiA5N2gtLjcuN2wxODMuMyA5N2M5LjMgNS4zIDI2LjUgNS4zIDM2LjYgMGwxODMuMy05N2guNy0uN2wtMTgzLjQtOTd6bTIxMi41IDkuMyAxMS4zIDcuMyAyIDEuNGMzLjMgMiA2LjEgNCA4LjcgNS4zIDI3LjkgMTguNiAzNy44IDM5LjIgMzcuOCA4MS42djEuNGgtMjguN2MwLTE4LjYtMi0zMS4yLTYuNy0zOS44LTMuMy03LjMtOC43LTEyLjYtMTguNi0xOS4ybC0uNy0uN2MtMi0xLjQtNC43LTIuNi03LjMtNC43bC0zLjMtMi0xMC43LTYuMSAxNi4yLTI0LjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+';
   const currencyLogo$4 = "https://assets.trustwalletapp.com/blockchains/fantom/info/logo.png";
   const wrappedLogo$3 = "https://assets.trustwalletapp.com/blockchains/fantom/assets/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/logo.png";
-
 
   var fantom = {
     name: 'fantom',
@@ -207,7 +206,7 @@
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://polygon-bor-rpc.publicnode.com',
-      'https://polygon.llamarpc.com',
+      'https://polygon.lava.build',
       'https://polygon-bor.publicnode.com'
     ],
     tokens: [ // only major tokens
@@ -265,8 +264,8 @@
     ],
     sockets: [
       'wss://solana.drpc.org',
-      'wss://mainnet-beta.solflare.network',
-      'wss://solana-rpc.publicnode.com'
+      'wss://solana-rpc.publicnode.com',
+      'wss://api.mainnet-beta.solana.com'
     ],
     tokens: [ // only major tokens
       {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": currencyLogo$2, "type": "NATIVE"},
@@ -317,9 +316,9 @@
       if(address) { return `https://arbiscan.io/address/${address}` }
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
-      'https://arbitrum.llamarpc.com',
       'https://arbitrum-one.publicnode.com',
-      'https://arbitrum.rpc.thirdweb.com'
+      'https://arbitrum.rpc.thirdweb.com',
+      'https://arb1.arbitrum.io/rpc'
     ],
     tokens: [ // only major tokens
       {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "ETH", "name": "Ether", "decimals": 18, "logo": ethereum.currency.logo, "type": "NATIVE"},
@@ -475,7 +474,7 @@
       if(address) { return `https://optimistic.etherscan.io/address/${address}` }
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
-      'https://optimism.llamarpc.com',
+      'https://optimism.lava.build',
       'https://optimism.publicnode.com',
       'https://optimism.rpc.thirdweb.com'
     ],
@@ -527,7 +526,7 @@
     },
     endpoints: [ // make sure provider supports batch size of 50 batch requests!
       'https://base-rpc.publicnode.com',
-      'https://base.llamarpc.com',
+      'https://base.lava.build',
       'https://base.rpc.thirdweb.com'
     ],
     tokens: [ // only major tokens

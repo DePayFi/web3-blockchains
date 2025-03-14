@@ -34,7 +34,7 @@ export default {
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://base-rpc.publicnode.com',
-    'https://base.llamarpc.com',
+    'https://base.lava.build',
     'https://base.rpc.thirdweb.com'
   ],
   tokens: [ // only major tokens

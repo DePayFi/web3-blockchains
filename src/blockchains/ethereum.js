@@ -35,7 +35,7 @@ export default {
     if(address) { return `https://etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://eth.llamarpc.com',
+    'https://eth1.lava.build',
     'https://ethereum.publicnode.com',
     'https://eth.rpc.blxrbdn.com'
   ],

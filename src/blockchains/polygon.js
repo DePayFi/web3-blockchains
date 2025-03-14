@@ -34,7 +34,7 @@ export default {
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://polygon-bor-rpc.publicnode.com',
-    'https://polygon.llamarpc.com',
+    'https://polygon.lava.build',
     'https://polygon-bor.publicnode.com'
   ],
   tokens: [ // only major tokens

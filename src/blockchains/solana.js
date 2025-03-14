@@ -37,8 +37,8 @@ export default {
   ],
   sockets: [
     'wss://solana.drpc.org',
-    'wss://mainnet-beta.solflare.network',
-    'wss://solana-rpc.publicnode.com'
+    'wss://solana-rpc.publicnode.com',
+    'wss://api.mainnet-beta.solana.com'
   ],
   tokens: [ // only major tokens
     {"address": "11111111111111111111111111111111", "symbol": "SOL", "name": "Solana", "decimals": 9, "logo": currencyLogo, "type": "NATIVE"},

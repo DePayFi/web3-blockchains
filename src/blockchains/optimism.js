@@ -33,7 +33,7 @@ export default {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://optimism.llamarpc.com',
+    'https://optimism.lava.build',
     'https://optimism.publicnode.com',
     'https://optimism.rpc.thirdweb.com'
   ],
