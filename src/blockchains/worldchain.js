@@ -27,11 +27,11 @@ export default {
   stables: { // max. 2 per fiat currency
     usd: ['0x79A02482A880bCE3F13e09Da970dC34db4CD24d1']
   },
-  explorer: 'https://worldchain-mainnet.explorer.alchemy.com',
+  explorer: 'https://worldscan.org',
   explorerUrlFor: ({ transaction, token, address })=>{
-    if(transaction) { return `https://worldchain-mainnet.explorer.alchemy.com/tx/${transaction.id || transaction}` }
-    if(token) { return `https://worldchain-mainnet.explorer.alchemy.com/token/${token}` }
-    if(address) { return `https://worldchain-mainnet.explorer.alchemy.com/address/${address}` }
+    if(transaction) { return `https://worldscan.org/tx/${transaction.id || transaction}` }
+    if(token) { return `https://worldscan.org/token/${token}` }
+    if(address) { return `https://worldscan.org/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://worldchain-mainnet.g.alchemy.com/public',

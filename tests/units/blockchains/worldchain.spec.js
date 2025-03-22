@@ -20,19 +20,19 @@ describe('worldchain', () => {
     expect(blockchain.wrapped.logo).toEqual("https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png");
     expect(blockchain.wrapped.address).toEqual('0x4200000000000000000000000000000000000006');
     expect(blockchain.stables.usd).toEqual(['0x79A02482A880bCE3F13e09Da970dC34db4CD24d1']);
-    expect(blockchain.explorer).toEqual('https://worldchain-mainnet.explorer.alchemy.com');
+    expect(blockchain.explorer).toEqual('https://worldscan.org');
     expect(blockchain.explorerUrlFor({
       transaction: { id: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f' }
-    })).toEqual('https://worldchain-mainnet.explorer.alchemy.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
+    })).toEqual('https://worldscan.org/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
     expect(blockchain.explorerUrlFor({
       transaction: '0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f'
-    })).toEqual('https://worldchain-mainnet.explorer.alchemy.com/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
+    })).toEqual('https://worldscan.org/tx/0x1907a9841e7abbc08e63586e5c9abbf7d0d42c5dc4a371304f439e2f949f51f')
     expect(blockchain.explorerUrlFor({
       token: '0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb'
-    })).toEqual('https://worldchain-mainnet.explorer.alchemy.com/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb')
+    })).toEqual('https://worldscan.org/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb')
     expect(blockchain.explorerUrlFor({
       address: '0x08B277154218CCF3380CAE48d630DA13462E3950'
-    })).toEqual('https://worldchain-mainnet.explorer.alchemy.com/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
+    })).toEqual('https://worldscan.org/address/0x08B277154218CCF3380CAE48d630DA13462E3950')
     expect(blockchain.zero).toEqual('0x0000000000000000000000000000000000000000');
     expect(blockchain.maxInt).toEqual('115792089237316195423570985008687907853269984665640564039457584007913129639935');
     expect(blockchain.permit2).toEqual('0x000000000022D473030F116dDEE9F6B43aC78BA3');
