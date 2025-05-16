@@ -1,7 +1,7 @@
 {
   "name": "@depay/web3-blockchains",
   "moduleName": "Web3Blockchains",
-  "version": "9.8.3",
+  "version": "9.8.4",
   "description": "JavaScript library containing aggregated information and abstractions for web3 blockchains.",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
