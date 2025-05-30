@@ -36,7 +36,7 @@ export default {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://bsc.blockrazor.xyz',
     'https://bsc-rpc.publicnode.com',
-    'https://bsc.rpc.blxrbdn.com'
+    'https://bsc-dataseed1.bnbchain.org'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo, "type": "NATIVE"},

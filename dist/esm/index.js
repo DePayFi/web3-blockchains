@@ -36,7 +36,7 @@ var bsc = {
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
     'https://bsc.blockrazor.xyz',
     'https://bsc-rpc.publicnode.com',
-    'https://bsc.rpc.blxrbdn.com'
+    'https://bsc-dataseed1.bnbchain.org'
   ],
   tokens: [ // only major tokens
     {"address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE", "symbol": "BNB", "name": "Binance Coin", "decimals": 18, "logo": currencyLogo$6, "type": "NATIVE"},
@@ -465,7 +465,7 @@ var optimism = {
     if(address) { return `https://optimistic.etherscan.io/address/${address}` }
   },
   endpoints: [ // make sure provider supports batch size of 50 batch requests!
-    'https://optimism.lava.build',
+    'https://1rpc.io/op',
     'https://optimism.publicnode.com',
     'https://optimism.rpc.thirdweb.com'
   ],
