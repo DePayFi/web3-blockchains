@@ -19,12 +19,6 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v3
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: eu-central-1
-
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@main
