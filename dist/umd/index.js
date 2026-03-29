@@ -597,7 +597,7 @@
   ];
 
   const findById = function (id) {
-    console.log('id', id);
+    if(typeof id == 'number'){ return findByNetworkId(id) }
     let fixedId = id;
     if (fixedId.match('0x0')) {
       // remove leading 0
