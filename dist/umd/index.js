@@ -598,6 +598,7 @@
 
   const findById = function (id) {
     let fixedId = id;
+    if(!fixedId){ fixedId = '0x1'; }
     if (fixedId.match('0x0')) {
       // remove leading 0
       fixedId = fixedId.replace(/0x0+/, '0x');
