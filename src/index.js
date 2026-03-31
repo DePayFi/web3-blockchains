@@ -9,6 +9,7 @@ import gnosis from './blockchains/gnosis'
 import optimism from './blockchains/optimism'
 import base from './blockchains/base'
 import worldchain from './blockchains/worldchain'
+import celo from './blockchains/celo'
 
 const all = [
   ethereum,
@@ -22,6 +23,7 @@ const all = [
   optimism,
   base,
   worldchain,
+  celo,
 ]
 
 const findById = function (id) {
@@ -63,7 +65,8 @@ export default {
   optimism,
   base,
   worldchain,
-  
+  celo,
+
   all,
   findById,
   findByNetworkId,
